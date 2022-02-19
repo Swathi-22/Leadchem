@@ -1,0 +1,307 @@
+<!-- header -->
+{% load static  %}
+<header id="header" class="home">
+    <div class="header-top">
+      <div class="container">
+        <div class="row"> 
+
+
+          <div class="desktop-user-info col-lg-4 col-md-6 col-sm-6 col-xs-12">
+              <!-- <div class="userinfo-inner">
+              <ul class="userinfo">
+                <li class="checkout">
+                  <a  href="checkoutpage.html">Checkout</a>
+                </li>
+                <li class="wishlist">
+                  <a href="mywishlistpage.html">Wishlist</a>
+                </li>
+                <li class="create_account">
+                  <a href="contactpage.html" id="customer_register_link">Contact</a>
+                </li>    
+              </ul>
+            </div>  -->
+          </div>
+
+
+          <!-- desktop_logo -->
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div id="desktop_logo">
+              <a href="index.html">
+                <img class="logo img-responsive" src="{% static 'web/images/logo.png' %}" alt="Demo Shop">
+              </a>
+            </div>
+          </div>    
+          
+          
+
+          
+          <div class="header-right col-md-4 col-sm-6 col-lg-4 col-xs-6">
+            <ul class="social-inner d-flex">
+                <li class="facebook">
+                  <a href="categorypage_leftcolumn.html" target="_blank">
+                    <i class="fa fa-facebook"></i><span class="socialicon-label fb-icon-padding"></span>
+                  </a>
+                </li>
+                <li class="twitter">
+                  <a href="categorypage_leftcolumn.html" target="_blank">
+                    <i class="fa fa-twitter"></i><span class="socialicon-label fb-icon-padding"></span>
+                  </a>
+                </li>
+                <li class="pinterest">
+                  <a href="categorypage_leftcolumn.html" target="_blank">
+                    <i class="fa fa-pinterest-p"></i><span class="socialicon-label fb-icon-padding"></span>
+                  </a>
+                </li>
+                <li class="instagram">
+                  <a href="categorypage_leftcolumn.html" target="_blank">
+                    <i class="fa fa-instagram"></i><span class="socialicon-label fb-icon-padding"></span>
+                  </a>
+                </li>
+                <li class="youtube">
+                  <a href="categorypage_leftcolumn.html" target="_blank">
+                    <i class="fa fa-youtube"></i><span class="socialicon-label fb-icon-padding"></span>
+                  </a>
+                </li>
+              </ul>
+
+         
+
+          </div>
+        </div>
+      </div>
+    </div> 
+
+
+    <div class="nav-full-width">
+      <div class="container">
+        <div class="row">
+          <!-- mega menu -->
+          <div id="_desktop_top_menu" class="menu js-top-menu hidden-sm-down">
+            <ul class="top-menu" id="top-menu" data-depth="0">  
+              <li class="cms-page" id="category-12">
+                <a class="dropdown-item" href="{% url 'web:index' %}" data-depth="0">
+                  Home
+                </a>
+              </li>
+              <li class="cms-page" id="cms-page-4">
+                <a class="dropdown-item" href="{% url 'web:about' %}" data-depth="0">
+                  About us
+                </a>
+              </li>
+              <li class="category" id="category-3">
+                <a class="dropdown-item" href="{% url 'web:product' %}" data-depth="0">Product</a>
+                <span class="float-xs-right hidden-lg-up">
+                  <span data-target="#top_sub_menu_37079" data-toggle="collapse" class="navbar-toggler collapse-icons">
+                    <i class="material-icons add"></i>
+                    <i class="material-icons remove"></i>
+                  </span>
+                </span>
+                <div class="popover sub-menu collapse" id="top_sub_menu_37079">
+                  <ul class="top-menu mainmenu-dropdown" data-depth="1">
+                    <!-- <li class="sub-category" id="category-4">
+                      <a class="dropdown-item dropdown-submenu" href="productpage_leftcolumn.html" data-depth="1">
+                         Product pages
+                      </a>
+                      <span class="float-xs-right hidden-lg-up">
+                        <span data-target="#top_sub_menu_40183" data-toggle="collapse" class="navbar-toggler collapse-icons">
+                          <i class="material-icons add"></i>
+                          <i class="material-icons remove"></i>
+                        </span>
+                      </span>
+                      <div class="collapse" id="top_sub_menu_40183">
+                        <ul class="top-menu" data-depth="2">
+                          <li class="sub-category" id="category-5">
+                            <a class="dropdown-item" href="productpage_fullwidth.html" data-depth="2">
+                             Product Full Width
+                            </a>
+                          </li>
+                          <li class="sub-category" id="category-6">
+                            <a class="dropdown-item" href="productpage_leftcolumn.html" data-depth="2">
+                              Product Left Column
+                            </a>
+                          </li>
+                          <li class="sub-category" id="category-7">
+                            <a class="dropdown-item" href="productpage_rightcolumn.html" data-depth="2">
+                              Product Right Column
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li> -->
+                    <li class="sub-category" id="category-8">
+                      <!-- <a class="dropdown-item dropdown-submenu" href="categorypage_leftcolumn.html" data-depth="1">
+                        Category Pages
+                      </a> -->
+                      <span class="float-xs-right hidden-lg-up">
+                          <span data-target="#top_sub_menu_71335" data-toggle="collapse" class="navbar-toggler collapse-icons">
+                            <i class="material-icons add"></i>
+                            <i class="material-icons remove"></i>
+                          </span>
+                        </span>
+                      <div class="collapse" id="top_sub_menu_71335">
+                        <ul class="top-menu" data-depth="2">
+                          <li class="sub-category" id="category-9">
+                            <a class="dropdown-item" href="categorypage_fullwidth.html" data-depth="2">
+                              Category Full Width 
+                            </a>
+                          </li>
+                          <li class="sub-category" id="category-10">
+                            <a class="dropdown-item" href="categorypage_leftcolumn.html" data-depth="2">
+                              Category Left Column
+                            </a>
+                          </li>
+                          <li class="sub-category" id="category-11">
+                            <a class="dropdown-item" href="categorypage_rightcolumn.html" data-depth="2">
+                              Category Right Column
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <!-- <li class="sub-category" id="category-14">
+                      <a class="dropdown-item dropdown-submenu" href="cartpage.html" data-depth="1">
+                         miscellaneous pages
+                      </a>
+                       <span class="float-xs-right hidden-lg-up">
+                          <span data-target="#top_sub_menu_17740" data-toggle="collapse" class="navbar-toggler collapse-icons">
+                            <i class="material-icons add"></i>
+                            <i class="material-icons remove"></i>
+                          </span>
+                        </span>
+                      <div class="collapse" id="top_sub_menu_17740">
+                        <ul class="top-menu" data-depth="2">
+                          <li class="sub-category" id="category-15">
+                            <a class="dropdown-item" href="404_page.html" data-depth="2">
+                              404 page
+                            </a>
+                          </li>
+                          <li class="sub-category" id="category-16">
+                            <a class="dropdown-item" href="checkoutpage.html" data-depth="2">
+                              Checkout Page
+                            </a>
+                          </li>
+                          <li class="sub-category" id="category-17">
+                            <a class="dropdown-item" href="maintenancepage.html" data-depth="2">
+                             Maintenance Page
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li> -->
+                  </ul>
+                  <!-- <img class="category-image" src="{% static 'web/images/category-dropdown.jpg' %}" alt="category-image" title="Women"> -->
+                </div>
+              </li>
+              
+              <li class="category" id="category-1111">
+                <a class="dropdown-item" href="{% url 'web:blog' %}" data-depth="0">Updates</a>
+                <span class="float-xs-right hidden-lg-up">
+                  <span data-target="#top_sub_menu_122" data-toggle="collapse" class="navbar-toggler collapse-icons">
+                    <i class="material-icons add"></i>
+                    <i class="material-icons remove"></i>
+                  </span>
+                </span>
+                <!-- <div class="popover sub-menu collapse" id="top_sub_menu_122">
+                  <ul class="top-menu mainmenu-dropdown" data-depth="1">
+                    <li class="sub-category" id="category-18">
+                      <a class="dropdown-item dropdown-submenu" href="blog_leftcolumn.html" data-depth="1">
+                        Blog Pages
+                      </a>
+                      <span class="float-xs-right hidden-lg-up">
+                          <span data-target="#top_sub_menu_11087" data-toggle="collapse" class="navbar-toggler collapse-icons">
+                            <i class="material-icons add"></i>
+                            <i class="material-icons remove"></i>
+                          </span>
+                        </span>
+                      <div class="collapse" id="top_sub_menu_11087">
+                        <ul class="top-menu" data-depth="2">
+                          <li class="sub-category" id="category-20">
+                            <a class="dropdown-item" href="blog_post.html" data-depth="2">
+                              Single blog page
+                            </a>
+                          </li>
+                          <li class="sub-category" id="category-21">
+                            <a class="dropdown-item" href="blog_leftcolumn.html" data-depth="2">
+                              Blogs Left Column
+                            </a>
+                          </li>
+                          <li class="sub-category" id="category-22">
+                            <a class="dropdown-item" href="blog_rightcolumn.html" data-depth="2">
+                              Blogs Right Column
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="category" id="category-19">
+                      <a class="dropdown-item dropdown-submenu" href="cartpage.html" data-depth="1">
+                         miscellaneous pages
+                      </a>
+                       <span class="float-xs-right hidden-lg-up">
+                          <span data-target="#top_sub_menu_17741" data-toggle="collapse" class="navbar-toggler collapse-icons">
+                            <i class="material-icons add"></i>
+                            <i class="material-icons remove"></i>
+                          </span>
+                        </span>
+                      <div class="collapse" id="top_sub_menu_17741">
+                        <ul class="top-menu" data-depth="2">
+                          <li class="sub-category" id="category-23">
+                            <a class="dropdown-item" href="404_page.html" data-depth="2">
+                              404 page
+                            </a>
+                          </li>
+                          <li class="sub-category" id="category-24">
+                            <a class="dropdown-item" href="checkoutpage.html" data-depth="2">
+                              Checkout Page
+                            </a>
+                          </li>
+                          <li class="sub-category" id="category-25">
+                            <a class="dropdown-item" href="maintenancepage.html" data-depth="2">
+                             Maintenance Page
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>                    
+                </div> -->
+              </li>
+              <li class="cms-page" id="cms-page-4">
+                <a class="dropdown-item" href="{% url 'web:gallery' %}" data-depth="0">
+                  Gallery
+                </a>
+              </li>
+              <li class="cms-page" id="cms-page-1">
+                <a class="dropdown-item" href="{% url 'web:contact' %}" data-depth="0">
+                  Contact us
+                </a>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+        <!-- mobile media -->
+          <div id="menu-icon" class="menu-icon hidden-lg-up">
+            <div class="menu-block">
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">   
+                <symbol id="setup" viewBox="0 0 750 750"><title>setup</title><g> <rect y="46.06" width="344.339" height="29.52"></rect> </g><g> <rect y="156.506" width="344.339" height="29.52"></rect> </g><g> <rect y="268.748" width="344.339" height="29.531"></rect> </g></symbol>
+              </svg>
+              <svg class="icon" viewBox="0 0 40 40"><use xlink:href="#setup" x="25%" y="27%"></use></svg>
+            </div>
+          </div>
+          <div id="_mobile_cart"></div>
+          <div id="_mobile_account"></div>
+          <div id="_mobile_seach_widget"></div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+
+
+</header>
+<!-- mobile media -->
+<div id="mobile_top_menu_wrapper" class="hidden-lg-up" style="display:none;">
+  <div id="top_menu_closer">
+    <i class="material-icons"></i>
+  </div>
+  <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
+</div>

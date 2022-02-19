@@ -3,45 +3,62 @@
 <html dir="ltr" lang="en-US">
 
 <head>
-  <!-- Document Meta -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Document Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <!--IE Compatibility Meta-->
-  <meta name="author" content="zytheme" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Leadchem Industries">
-  <link rel="icon" href="{% static 'web/images/favicon.png' %}" sizes="32x32" type="image/png">
-  <link rel="stylesheet" href="{% static 'web/css/iconfont/material-icons.min.css' %}">
-  <link rel="stylesheet" href="{% static 'web/css/tether.min.css' %}">
-  <script src="{% static 'web/js/tether.min.js' %}"></script>
+    <!--IE Compatibility Meta-->
+    <meta name="author" content="zytheme" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Leadchem Industries">
+    <link rel="icon" href="{% static 'web/images/favicon.png' %}" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="{% static 'web/css/iconfont/material-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/tether.min.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/style.css' %}">
+    <!-- fontawesome -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="{% static 'web/css/font-awesome.min.css' %}">
+    <script src="{% static 'web/js/tether.min.js' %}"></script>
 
-  <!-- Stylesheets -->
-  <link href="{% static 'web/css/bootstrap.css' %}" rel="stylesheet">
-  <link href="{% static 'web/css/owl.carousel.min.css' %}" rel="stylesheet">
-  <link href="{% static 'web/css/theme.css' %}" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link href="{% static 'web/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'web/css/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'web/css/theme.css' %}" rel="stylesheet">
 
-  
 
-  <!-- Document Title -->
-  <title>Leadchem Industries </title>
+
+    <!-- Document Title -->
+    <title>Leadchem Industries </title>
 </head>
 
 <body id="index">
-    {% block content %}
-    
-    {% endblock %}
+    <main>
+        <div id="menu_wrapper" class=""></div>
+        <!-- loader -->
+        <div id="spin-wrapper"></div>
+        <div id="siteloader">
+            <div class="loader"></div>
+        </div>
+        {% include 'web/partials/header.html' %}
+        {% block content %}
 
-    <!-- JavaScripts -->   
-  <script src="{% static 'web/js/jquery.js' %}"></script>
-  <script src="{% static 'web/js/bootstrap.js' %}"></script>
-  <script src="{% static 'web/js/owl.carousel.js' %}"></script>
-  <script src="{% static 'web/js/animate.js' %}"></script>
-  <script src="{% static 'web/js/totalstorage.js' %}"></script>
-  <script src="{% static 'web/js/counter.js' %}"></script>
-  <script src="{% static 'web/js/parallax.js' %}"></script>
-  <script src="{% static 'web/js/instafeed.js' %}"></script>
-  <script src="{% static 'web/js/ishi.initialize.js' %}"></script>
-  <script src="{% static 'web/js/support.js' %}"></script>
+        {% endblock %}
+
+        {% include 'web/partials/footer.html' %}
+
+    </main>
+    <!-- JavaScripts -->
+    <script src="{% static 'web/js/jquery.js' %}"></script>
+    <script src="{% static 'web/js/bootstrap.js' %}"></script>
+    <script src="{% static 'web/js/owl.carousel.js' %}"></script>
+    <script src="{% static 'web/js/animate.js' %}"></script>
+    <script src="{% static 'web/js/totalstorage.js' %}"></script>
+    <script src="{% static 'web/js/counter.js' %}"></script>
+    <script src="{% static 'web/js/parallax.js' %}"></script>
+    <script src="{% static 'web/js/instafeed.js' %}"></script>
+    <script src="{% static 'web/js/ishi.initialize.js' %}"></script>
+    <script src="{% static 'web/js/support.js' %}"></script>
+    {% block javascript %}{% endblock %}
 </body>
+
 </html>
