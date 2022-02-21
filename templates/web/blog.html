@@ -1,29 +1,30 @@
 {% extends 'web/base.html' %}
 {% load static %}
 {% block content %}
-      <!-- Breadcrumb -->
-      <div class="breadcrumb-container">
-        <nav data-depth="2" class="breadcrumb container">
-          <h1 class="h1 category-title breadcrumb-title">Blog</h1>
-          <ul>
-            <li>
-              <a href="index.html">
-                <span>Home</span>
-              </a>
-            </li>
-            <li>
-                <span>Blog Article</span>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- Smart Blog  -->
-      <div id="wrapper">
-        <div class="container">
-          <div class="row">    
-            <div id="_desktop_left_column" class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
-              <div id="left-column">
-                <section class="blog-category">
+<!-- Breadcrumb -->
+<div class="breadcrumb-container">
+  <nav data-depth="2" class="breadcrumb container">
+    <h1 class="h1 category-title breadcrumb-title">Blog</h1>
+    <ul>
+      <li>
+        <a href="index.html">
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <span>Blog Article</span>
+      </li>
+    </ul>
+  </nav>
+</div>
+<!-- Smart Blog  -->
+<div id="wrapper ">
+  <div class="container">
+    <div class="row mt-5">
+      <!-- <div id="_desktop_left_column" class="col-xs-12 col-sm-12 col-md-12 col-lg-3"> -->
+      <!-- <div id="left-column"> -->
+
+      <!-- <section class="blog-category">
                   <h3 class="h1 products-section-title block-title hidden-md-down">Top viewed</h3>
                   <div class="block-title clearfix  hidden-lg-up collapsed" data-target="#blogarticle-container" data-toggle="collapse">
                     <span class="products-section-title">Top viewed</span>
@@ -124,8 +125,9 @@
                       </div>
                     </div>
                   </div>
-                </section>
-                <div id="ishileftbanners" class="clearfix">
+                </section> -->
+
+      <!-- <div id="ishileftbanners" class="clearfix">
                   <div id="ishileftbanners_1" class="ishileftbanners-container">
                     <div class="image-container">
                       <a class="ishi-customhover-fadeinflip" href="categorypage_leftcolumn.html">  
@@ -133,8 +135,9 @@
                       </a>
                     </div>
                   </div>
-                </div>
-                <section class="popular-blog clearfix mt-3"> 
+                </div> -->
+
+      <!-- <section class="popular-blog clearfix mt-3"> 
                   <h3 class="h1 block-title hidden-md-down">Popular Tag</h3>
                   <div class="block-title clearfix  hidden-lg-up collapsed" data-target="#tag-container" data-toggle="collapse">
                     <span class="products-section-title">Popular Tag</span>
@@ -154,204 +157,98 @@
                       <li><a href="javascript: void(0)">Blog</a></li>
                     </ul>
                   </div>
-                </section>
+                </section> -->
+
+      <!-- </div> -->
+      <!-- </div>                     -->
+
+
+      <div id="content-wrapper" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="smartblogcat" class="block">
+          <div class="row">
+            {% for updates in update %}
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <div class="sdsarticleCat clearfix row">
+                <div class="articleContent col-xl-12 col-lg-12 col-md-12">
+                  <a href="{% url 'web:blogDetails' updates.slug %}" title="Upon of seasons earth dominion">
+                    <img alt="Upon of seasons earth dominion" src="{{updates.image.crop.370x242}}">
+                  </a>
+                </div>
+                
+                  <div class="smartblog-desc col-xl-12 col-lg-12 col-md-12">
+                    
+                    
+                    <div class="sdsarticleHeader">
+                      <h3 class='sdstitle_block'><a title="Upon of seasons earth dominion" href="{% url 'web:blogDetails' updates.slug %}">
+                          {{updates.title}}</a></h3>
+                    </div>
+                   
+                    <div class="sdsarticle-des">
+                      <div class="clearfix">
+                        <div class="lipsum">
+                         {{updates.summary}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sdsreadMore">
+                      <span class="more">
+                        <a title="Upon of seasons earth dominion" href="{% url 'web:blogDetails' updates.slug %}" class="r_more btn-primary">Read
+                          more</a>
+                      </span>
+                    </div>
+                  </div>
+                
+
               </div>
-            </div>                    
-            <div id="content-wrapper" class="col-xs-12 col-sm-12 col-md-12 col-lg-9"> 
-              <div id="smartblogcat" class="block">
-                <div class="sdsarticleCat clearfix row">
-                  <div class="articleContent col-xl-6 col-lg-12 col-md-12">
-                    <a href="blog_post.html" title="Upon of seasons earth dominion">
-                      <img alt="Upon of seasons earth dominion" src="{% static 'web/images/blog/1.jpg' %}">
-                    </a>
-                  </div>
-                  <div class="smartblog-desc col-xl-6 col-lg-12 col-md-12">
-                    &nbsp;
-                    <span class="author"><i class="fa fa-user"></i>&nbsp;&nbsp;Posted by: Admin Admin</span>&nbsp;&nbsp;
-                    <div class="sdsarticleHeader">
-                      <h3 class='sdstitle_block'><a title="Upon of seasons earth dominion" href="blog_post.html">Upon of seasons earth dominion</a></h3>
-                    </div>
-                    <span class="blogdetail">       
-                      <span class="articleSection"><a href="blog_post.html"><i class="fa fa-tags"></i>&nbsp;&nbsp;Uncategories</a></span>&nbsp;&nbsp;
-                      <span class="blogcomment"><a title="0 Comments" href="blog_post.html"><i class="fa fa-comments"></i>&nbsp;&nbsp;0  Comments</a></span>
-                      &nbsp;
-                      <span class="viewed"><i class="fa fa-eye"></i>&nbsp;&nbsp; views (0)</span>
-                    </span>
-                    <div class="sdsarticle-des">
-                      <div class="clearfix">
-                        <div class="lipsum">
-                          Nascetur ridiculus mus upon of seasons earth dominion. Gathering brought light, creeping there saying. The lesser appear without very darkness seasons saw be. Dry cattle. Man very third.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="sdsreadMore">
-                      <span class="more">
-                        <a title="Upon of seasons earth dominion" href="blog_post.html" class="r_more btn-primary">Read more</a>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="sdsarticleCat clearfix row">
-                  <div class="articleContent col-xl-6 col-lg-12 col-md-12">
-                    <a href="blog_post.html" title="Christmas Sale is here 7" class="imageFeaturedLink">
-                      <img  alt="Christmas Sale is here 7" src="{% static 'web/images/blog/2.jpg' %}" class="imageFeatured">
-                    </a>
-                  </div>
-                  <div class="smartblog-desc col-xl-6 col-lg-12 col-md-12">
-                    &nbsp;
-                    <span class="author"><i class="fa fa-user"></i>&nbsp;&nbsp;Posted by: Admin Admin</span>&nbsp;&nbsp;
-                    <div class="sdsarticleHeader">
-                      <h3 class='sdstitle_block'><a title="Christmas Sale is here 7" href="blog_post.html">Christmas Sale is here 7</a></h3>
-                    </div>
-                    <span class="blogdetail">       
-                      <span class="articleSection"><a href="blog_post.html"><i class="fa fa-tags"></i>&nbsp;&nbsp;Uncategories</a></span>&nbsp;&nbsp;
-                      <span class="blogcomment"><a title="0 Comments" href="blog_post.html"><i class="fa fa-comments"></i>&nbsp;&nbsp;0 Comments</a></span>
-                      &nbsp;
-                      <span class="viewed"><i class="fa fa-eye"></i>&nbsp;&nbsp; views (0)</span>
-                    </span>
-                    <div class="sdsarticle-des">
-                      <div class="clearfix">
-                        <div class="lipsum">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type an
-                        </div>
-                      </div>
-                    </div>
-                    <div class="sdsreadMore">
-                      <span class="more">
-                        <a title="Christmas Sale is here 7" href="blog_post.html" class="r_more btn-primary">Read more</a>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="sdsarticleCat clearfix row">
-                  <div class="articleContent col-xl-6 col-lg-12 col-md-12">
-                    <a href="blog_post.html" title="Nostro expetenda voluptatum sit ex" class="imageFeaturedLink">
-                      <img  alt="Nostro expetenda voluptatum sit ex" src="{% static 'web/images/blog/3.jpg' %}" class="imageFeatured">
-                    </a>
-                  </div>
-                  <div class="smartblog-desc col-xl-6 col-lg-12 col-md-12">
-                    &nbsp;
-                    <span class="author"><i class="fa fa-user"></i>&nbsp;&nbsp;Posted by: Admin Admin</span>&nbsp;&nbsp;
-                    <div class="sdsarticleHeader">
-                      <h3 class='sdstitle_block'><a title="Nostro expetenda voluptatum sit ex" href="blog_post.html">Nostro expetenda voluptatum sit ex</a></h3>
-                    </div>
-                    <span class="blogdetail">       
-                      <span class="articleSection"><a href="blog_post.html"><i class="fa fa-tags"></i>&nbsp;&nbsp;Uncategories</a></span>&nbsp;&nbsp;
-                      <span class="blogcomment"><a title="0 Comments" href="blog_post.html"><i class="fa fa-comments"></i>&nbsp;&nbsp;0  Comments</a></span>
-                      &nbsp;
-                      <span class="viewed"><i class="fa fa-eye"></i>&nbsp;&nbsp; views (0)</span>
-                    </span>
-                    <div class="sdsarticle-des">
-                      <div class="clearfix">
-                        <div class="lipsum">
-                          Doctus omittam intellegam duo in. Ius ne sint dicit accusamus, cu pri solum decore corpora. Mei melius audire ex. Nostrum ocurreret cum at. Ut apeirian invenire eleifend eos, mei velit vituperata at.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="sdsreadMore">
-                      <span class="more">
-                        <a title="Nostro expetenda voluptatum sit ex" href="blog_post.html" class="r_more btn-primary">Read more</a>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="sdsarticleCat clearfix row">
-                  <div class="articleContent col-xl-6 col-lg-12 col-md-12">
-                    <a href="blog_post.html" title="Viderer voluptatum te eum" class="imageFeaturedLink">
-                      <img  alt="Viderer voluptatum te eum" src="{% static 'web/images/blog/4.jpg' %}" class="imageFeatured">
-                    </a>
-                  </div>
-                  <div class="smartblog-desc col-xl-6 col-lg-12 col-md-12">
-                    &nbsp;
-                    <span class="author"><i class="fa fa-user"></i>&nbsp;&nbsp;Posted by: Admin Admin</span>&nbsp;&nbsp;
-                    <div class="sdsarticleHeader">
-                      <h3 class='sdstitle_block'><a title="Viderer voluptatum te eum" href="blog_post.html">Viderer voluptatum te eum</a></h3>
-                    </div>
-                    <span class="blogdetail">       
-                      <span class="articleSection"><a href="blog_post.html"><i class="fa fa-tags"></i>&nbsp;&nbsp;Uncategories</a></span>&nbsp;&nbsp;
-                      <span class="blogcomment"><a title="0 Comments" href="blog_post.html"><i class="fa fa-comments"></i>&nbsp;&nbsp;0  Comments</a></span>
-                      &nbsp;
-                      <span class="viewed"><i class="fa fa-eye"></i>&nbsp;&nbsp; views (0)</span>
-                    </span>
-                    <div class="sdsarticle-des">
-                      <div class="clearfix">
-                        <div class="lipsum">
-                          Ei has mutat solum. Fugit atomorum efficiantur an vim, te mea diceret democritum referrentur, et altera aliquid mea. Sed illud dictas placerat ex, vel ea nihil recusabo consectetuer. Est et utamur sim
-                        </div>
-                      </div>
-                    </div>
-                    <div class="sdsreadMore">
-                      <span class="more">
-                        <a title="Viderer voluptatum te eum" href="blog_post.html" class="r_more btn-primary">Read more</a>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="sdsarticleCat clearfix row">
-                  <div class="articleContent col-xl-6 col-lg-12 col-md-12">
-                    <a href="blog_post.html" title="Nec intellegat deseruisse te" class="imageFeaturedLink">
-                      <img  alt="Nec intellegat deseruisse te" src="{% static 'web/images/blog/5.jpg' %}" class="imageFeatured">
-                    </a>
-                  </div>
-                  <div class="smartblog-desc col-xl-6 col-lg-12 col-md-12">
-                    &nbsp;
-                    <span class="author"><i class="fa fa-user"></i>&nbsp;&nbsp;Posted by: Admin Admin</span>&nbsp;&nbsp;
-                    <div class="sdsarticleHeader">
-                      <h3 class='sdstitle_block'><a title="Nec intellegat deseruisse te" href="blog_post.html">Nec intellegat deseruisse te</a></h3>
-                    </div>
-                    <span class="blogdetail">       
-                      <span class="articleSection"><a href="blog_post.html"><i class="fa fa-tags"></i>&nbsp;&nbsp;Uncategories</a></span>&nbsp;&nbsp;
-                      <span class="blogcomment"><a title="0 Comments" href="blog_post.html"><i class="fa fa-comments"></i>&nbsp;&nbsp;0  Comments</a></span>
-                      &nbsp;
-                      <span class="viewed"><i class="fa fa-eye"></i>&nbsp;&nbsp; views (1)</span>
-                    </span>
-                    <div class="sdsarticle-des">
-                      <div class="clearfix">
-                        <div class="lipsum">
-                          Mea stet putent sadipscing an. Per prima equidem cu, sit cu ullum democritum, tibique tacimates no usu. Falli audire ad vis, sea quando civibus placerat in. Cu utamur tritani argumentum pro, sed ne no
-                        </div>
-                      </div>
-                    </div>
-                    <div class="sdsreadMore">
-                      <span class="more">
-                        <a title="Nec intellegat deseruisse te" href="blog_post.html" class="r_more btn-primary">Read more</a>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="blog_pagination">
-                <div class="pagination">
-                  <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12 pagination-desc">Showing 1 to 5 of 8 (1 Pages)</div>
-                  <div class="col-xl-8 col-lg-7 col-md-7 col-xs-12 pagination-right">
-                    <ul class="page-list clearfix">        
-                      <li>
-                        <a rel="prev" href="javascript:void(0)" class="previous">
-                          <i class="material-icons"></i><span class="pagination-lbl">Previous</span>
-                        </a>
-                      </li>                
-                      <li class="current">
-                        <a rel="nofollow" href="javascript:void(0)" class="disabled js-search-link">1</a>
-                      </li>                
-                      <li>
-                        <a rel="nofollow" href="javascript:void(0)" class="js-search-link">2</a>
-                      </li>                
-                      <li>
-                        <a rel="next" href="javascript:void(0)" class="next js-search-link">
-                          <span class="pagination-lbl">Next</span><i class="material-icons"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>          
+            </div>
+            {% endfor  %}
+
+            
+
+
+           
           </div>
-        </div>        
+
+
+        </div>
+
+       
+
+
+
+
+        <!-- <div class="blog_pagination">
+          <div class="pagination">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12 pagination-desc">Showing 1 to 5 of 8 (1 Pages)</div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-xs-12 pagination-right">
+              <ul class="page-list clearfix">
+                <li>
+                  <a rel="prev" href="javascript:void(0)" class="previous">
+                    <i class="material-icons"></i><span class="pagination-lbl">Previous</span>
+                  </a>
+                </li>
+                <li class="current">
+                  <a rel="nofollow" href="javascript:void(0)" class="disabled js-search-link">1</a>
+                </li>
+                <li>
+                  <a rel="nofollow" href="javascript:void(0)" class="js-search-link">2</a>
+                </li>
+                <li>
+                  <a rel="next" href="javascript:void(0)" class="next js-search-link">
+                    <span class="pagination-lbl">Next</span><i class="material-icons"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
       </div>
-      <div class="container">
-        <div id="_mobile_left_column"></div>
-        <div id="_mobile_right_column"></div>
-        <div class="clearfix"></div>
-      </div>
-  {% endblock %}
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div id="_mobile_left_column"></div>
+  <div id="_mobile_right_column"></div>
+  <div class="clearfix"></div>
+</div>
+{% endblock %}

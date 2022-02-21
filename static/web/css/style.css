@@ -1,3 +1,12 @@
 .fb-icon-padding{
     padding-left: 15px;
 }
+.offset-top-left-shadow {
+    box-shadow: -5px -5px 10px;
+  }
+.card-borer{
+    border: none !important;
+}
+.image-width{
+    width: 100%; 
+}

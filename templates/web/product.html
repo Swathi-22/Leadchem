@@ -92,19 +92,21 @@
                     <span class="col-sm-3 col-xs-12 col-md-3 hidden-lg-down sort-by">Sort by:</span>
                     <div class="col-sm-9 col-xs-12 col-md-9 products-sort-order dropdown">
                       <a href="javascript:void(0)" class="select-title" rel="nofollow" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Relevance<i
+                        aria-haspopup="true" aria-expanded="false" id="filterTitle">All<i
                           class="material-icons pull-xs-right">&#xE5C5;</i></a>
                       <div class="dropdown-menu">
-                        <a rel="nofollow" href="categorypage_leftcolumn.html"
-                          class="select-list current js-search-link">Relevance</a>
-                        <a rel="nofollow" href="categorypage_leftcolumn.html" class="select-list js-search-link">Name, A
+                        {% for brand in brands %}
+                        <a rel="nofollow"
+                          class="select-list current js-search-link" onclick="brandFilter({{brand.id}})">{{brand.title}}</a>
+                        {% endfor %}
+                        <!-- <a rel="nofollow" href="categorypage_leftcolumn.html" class="select-list js-search-link">Name, A
                           to Z</a>
                         <a rel="nofollow" href="categorypage_leftcolumn.html" class="select-list js-search-link">Name, Z
                           to A</a>
                         <a rel="nofollow" href="categorypage_leftcolumn.html" class="select-list js-search-link">Price,
                           low to high</a>
                         <a rel="nofollow" href="categorypage_leftcolumn.html" class="select-list js-search-link">Price,
-                          high to low</a>
+                          high to low</a> -->
                       </div>
                     </div>
                   </div>
@@ -118,15 +120,17 @@
               </section>
             </div>
             <div id="js-product-list">
-              <div class="products row">
-                <article class="product-miniature js-product-miniature col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+              <div class="products row" id="productContainer">
+
+                {% for products in product %}
+                <article class="product-miniature js-product-miniature col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 {{products.brand.id}}">
                   <div class="product-container product-thumb">
                     <div class="image">
                       <a href="productpage_leftcolumn.html" class="thumbnail product-thumbnail">
-                        <img src="{% static 'web/images/product/1.jpg' %}" alt="product-img">
-                        <img class="product-img-extra change" alt="product-img" src="{% static 'web/images/product/2.jpg' %}">
+                        <img src="{{products.image.crop.270x270}}" alt="product-img">
+                        <!-- <img class="product-img-extra change" alt="product-img" src="{% static 'web/images/product/2.jpg' %}"> -->
                       </a>
-                      <div class="product-comments">
+                      <!-- <div class="product-comments">
                         <div class="star_content">
                           <div class="star star_on"></div>
                           <div class="star star_on"></div>
@@ -134,8 +138,8 @@
                           <div class="star star_on"></div>
                           <div class="star star_on"></div>
                         </div>
-                      </div>
-                      <span class="outstock-overlay">SOLD OUT</span>
+                      </div> -->
+                      <!-- <span class="outstock-overlay">SOLD OUT</span>
                       <div class="product-flags">
                         <div class="sale">Sale</div>
                       </div>
@@ -151,30 +155,35 @@
                             <img src="{% static 'web/svgs/wishlist-outline.svg' %}" alt="wishlist-outline">
                           </a>
                         </div>
-                      </div>
+                      </div> -->
                       <div class="btn-cart">
                         <a class="button" href="productpage_leftcolumn.html">
                           <span class="button-cart">
                             <img src="{% static 'web/svgs/add-to-cart.svg' %}" alt="add-to-cart">
                           </span>
-                          <i class="fa fa-shopping-cart"></i>
-                          <span class="lblcart">SOLD OUT</span>
+                          <!-- <i class="fa fa-shopping-cart"></i>
+                          <span class="lblcart">SOLD OUT</span> -->
                         </a>
                       </div>
                     </div>
                     <div class="caption">
-                      <h3 class='product-title'><a href="productpage_leftcolumn.html">Aroma Mocha</a></h3>
-                      <p class="price">
+                      <h3 class='product-title'><a href="productpage_leftcolumn.html">{{products.title}}</a></h3>
+                      <!-- <p class="price">
                         <span class="regular price-old">$55.00</span>
                         <span class="price-discount">9%</span>
                         <span class="price-sale">$50.00 </span>
-                      </p>
-                      <p class="description">
-                        The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed
-                        sp..</p>
+                      </p> -->
+                      <p class="">
+                        {{products.description}}</p>
                     </div>
                   </div>
                 </article>
+
+                {% endfor %}
+
+
+{% comment %}
+
                 <article class="product-miniature js-product-miniature col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                   <div class="product-container product-thumb">
                     <div class="image">
@@ -225,6 +234,7 @@
                     </div>
                   </div>
                 </article>
+
                 <article class="product-miniature js-product-miniature col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                   <div class="product-container product-thumb">
                     <div class="image">
@@ -900,8 +910,9 @@
                     </div>
                   </div>
                 </article>
+              {% endcomment %}
               </div>
-              <div class="pagination">
+              <!-- <div class="pagination">
                 <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12 pagination-desc">Showing 1-15 of 19 item(s)</div>
                 <div class="col-xl-8  col-lg-7 col-md-7 col-xs-12 pagination-right">
                   <ul class="page-list clearfix">
@@ -923,7 +934,7 @@
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </section>
@@ -990,5 +1001,14 @@
       }
     }
   });
+</script>
+
+<script>
+function brandFilter(id){
+  $('#productContainer').children().hide();
+  $('.'+id).fadeIn();
+  $('#filterTitle').html($('#'+id).html())
+
+}
 </script>
 {% endblock %}

@@ -393,7 +393,8 @@
     </script>
 
     <!-- product-information -->
-    <section id="ishi-singleproduct-section">
+
+    <!-- <section id="ishi-singleproduct-section">
       <div class="container">
         <div class="section-header text-center">
           <div class="subtitle">FEATURED</div>
@@ -817,10 +818,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- instagram -->
-    <section id="ishiinstagramblock" class="tab-content clearfix">
+
+    <!-- <section id="ishiinstagramblock" class="tab-content clearfix">
       <div class="container">
         <div class="home-title">
           <a href="https://www.instagram.com/instagram" target="_blank" rel="nofollow">
@@ -831,7 +833,7 @@
         <div id="ishiinstagram-carousel" class="owl-carousel">
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- ishi-features-section -->
 
@@ -923,22 +925,22 @@
             <h2 class="title">Customer Review</h2>
           </div>
           <div id="ishitestimonials-carousel" class="owl-carousel">
+            {% for testimonilas in testimonial %}
             <div class="item ishitestimonials-container">
               <div class="testimonial-container">
                 <div class="testimonial-img">
-                  <img src="{% static 'web/images/testimonial/t1.png' %}" class="img-fluid" alt="Marko Westin">
+                  <img src="{{testimonilas.image.crop.90x90}}" class="img-fluid" alt="Marko Westin">
                 </div>
                 <div class="user-description">
-                  There are many variations of lorem ipsum available, but the have suffered alteration in some form by
-                  humour.”Lorem Ipsum is simply dummy text of the printing.
+                  {{testimonilas.description}}
                 </div>
                 <div class="user-name">
-                  Luies Charls
+                  {{testimonilas.name}}
                 </div>
                 <div class="user-designation">
-                  Web Designer
+                  {{testimonilas.designation}}
                 </div>
-                <div class="user-ratting">
+                <!-- <div class="user-ratting">
                   <span class="starrating">
                     <i class="star-icon starfill"></i>
                     <i class="star-icon starfill"></i>
@@ -946,9 +948,12 @@
                     <i class="star-icon "></i>
                     <i class="star-icon "></i>
                   </span>
-                </div>
+                </div> -->
               </div>
             </div>
+          {% endfor %}
+
+<!-- 
             <div class="item ishitestimonials-container">
               <div class="testimonial-container">
                 <div class="testimonial-img">
@@ -1000,7 +1005,8 @@
                   </span>
                 </div>
               </div>
-            </div>
+            </div> -->
+            
           </div>
         </div>
       </div>
@@ -1044,14 +1050,19 @@
       <div class="container">
         <div class="manufacturer-container">
           <div id="manufacturer-carousel" class="owl-carousel">
+
+            {% for brands in brand%}
             <div class="item">
               <div class="image-container">
                 <a href="categorypage_leftcolumn.html">
-                  <img src="{% static 'web/images/brand/logo1.png' %}" alt="brand-1" class="img-responsive">
+                  <img src="{{brands.image.crop.130x130}}" alt="brand-1" class="img-responsive">
                 </a>
               </div>
             </div>
-            <div class="item">
+            {% endfor %}
+
+
+            <!-- <div class="item">
               <div class="image-container">
                 <a href="categorypage_leftcolumn.html">
                   <img src="{% static 'web/images/brand/logo2.png' %}" alt="brand-2" class="img-responsive">
@@ -1085,7 +1096,9 @@
                   <img src="{% static 'web/images/brand/logo6.png' %}" alt="brand-6" class="img-responsive">
                 </a>
               </div>
-            </div>
+            </div> -->
+
+
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@
           <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
             <div id="desktop_logo">
               <a href="index.html">
-                <img class="logo img-responsive" src="{% static 'web/images/logo.png' %}" alt="Demo Shop">
+                <img class="logo img-responsive" src="{% static 'web/images/Leadchem_logo.png' %}" alt="Demo Shop">
               </a>
             </div>
           </div>    
@@ -90,12 +90,12 @@
               </li>
               <li class="category" id="category-3">
                 <a class="dropdown-item" href="{% url 'web:product' %}" data-depth="0">Product</a>
-                <span class="float-xs-right hidden-lg-up">
+                <!-- <span class="float-xs-right hidden-lg-up">
                   <span data-target="#top_sub_menu_37079" data-toggle="collapse" class="navbar-toggler collapse-icons">
                     <i class="material-icons add"></i>
                     <i class="material-icons remove"></i>
                   </span>
-                </span>
+                </span> -->
                 <div class="popover sub-menu collapse" id="top_sub_menu_37079">
                   <ul class="top-menu mainmenu-dropdown" data-depth="1">
                     <!-- <li class="sub-category" id="category-4">
@@ -132,20 +132,24 @@
                       <!-- <a class="dropdown-item dropdown-submenu" href="categorypage_leftcolumn.html" data-depth="1">
                         Category Pages
                       </a> -->
-                      <span class="float-xs-right hidden-lg-up">
+                      <!-- <span class="float-xs-right hidden-lg-up">
                           <span data-target="#top_sub_menu_71335" data-toggle="collapse" class="navbar-toggler collapse-icons">
                             <i class="material-icons add"></i>
                             <i class="material-icons remove"></i>
                           </span>
-                        </span>
+                        </span> -->
                       <div class="collapse" id="top_sub_menu_71335">
                         <ul class="top-menu" data-depth="2">
+                          {% for categories in category %}
                           <li class="sub-category" id="category-9">
-                            <a class="dropdown-item" href="categorypage_fullwidth.html" data-depth="2">
-                              Category Full Width 
+                            <a class="dropdown-item" href="{% url 'web:category' categories.slug %}" data-depth="2">
+                              {{categories.title}} 
                             </a>
                           </li>
-                          <li class="sub-category" id="category-10">
+                          {% endfor %}
+
+
+                          <!-- <li class="sub-category" id="category-10">
                             <a class="dropdown-item" href="categorypage_leftcolumn.html" data-depth="2">
                               Category Left Column
                             </a>
@@ -154,7 +158,7 @@
                             <a class="dropdown-item" href="categorypage_rightcolumn.html" data-depth="2">
                               Category Right Column
                             </a>
-                          </li>
+                          </li> -->
                         </ul>
                       </div>
                     </li>

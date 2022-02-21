@@ -1,5 +1,5 @@
 
-from unicodedata import name
+
 from django.db import models
 from versatileimagefield.fields import VersatileImageField,PPOIField
 from tinymce.models import HTMLField
@@ -29,10 +29,11 @@ class Brand(models.Model):
 
 
 class Update(models.Model):
-    image = VersatileImageField('Image',upload_to='update/',ppoi_field='ppoi')
-    ppoi = PPOIField('Image PPOI')
     title=models.CharField(max_length=225)
     summary=models.CharField(max_length=335)
+    date=models.DateField()
+    image = VersatileImageField('Image',upload_to='update/',ppoi_field='ppoi')
+    ppoi = PPOIField('Image PPOI')
     content= HTMLField(blank=True, null=True)
     slug=models.SlugField(unique=True)
 
@@ -73,8 +74,13 @@ class Product(models.Model):
     ppoi = PPOIField('Image PPOI')
     title=models.CharField(max_length=225)
     description=models.CharField(max_length=500)
+    category=models.ForeignKey(Category,on_delete=models.CASCADE)
+    brand=models.ForeignKey(Brand,on_delete=models.CASCADE)
+    is_popular=models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
+
+
 
 

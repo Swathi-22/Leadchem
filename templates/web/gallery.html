@@ -1,9 +1,49 @@
 {% extends 'web/base.html' %}
 {% load static %}
 {% block content %}
-<div>
-    Content...
+<div class="breadcrumb-container">
+    <nav data-depth="2" class="breadcrumb container">
+      <h1 class="h1 category-title breadcrumb-title">Gallery</h1>
+      <ul>
+        <li>
+          <a href="index.html">
+            <span>Home</span>
+          </a>
+        </li>
+        <!-- <li>
+          <span>Blog Article</span>
+        </li> -->
+      </ul>
+    </nav>
+  </div>
+<div class="container">
+    <div class="row mt-5">
+        <div class="gallery-image d-flex">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card card-borer">
 
+                    <a href="contactpage.html"  class="about-img">
+                        <img alt="about-img" src="{% static 'web/images/about-img2.jpg' %}" class="offset-top-left-shadow image-width"></a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card card-borer">
+
+                    <a href="contactpage.html"  class="about-img">
+                        <img alt="about-img" src="{% static 'web/images/about-img2.jpg' %}" class="offset-top-left-shadow image-width"></a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card card-borer">
+
+                    <a href="contactpage.html"  class="about-img">
+                        <img alt="about-img" src="{% static 'web/images/about-img2.jpg' %}" class="offset-top-left-shadow image-width"></a>
+                </div>
+            </div>
+    
+        </div>
+        
+    </div>
 </div>
 
 {% endblock %}
