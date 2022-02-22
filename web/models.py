@@ -58,7 +58,7 @@ class Contact(models.Model):
     message=HTMLField(blank=True, null=True)
 
     def __str__(self):
-        return self.title
+        return self.name
   
 
 class Category(models.Model):

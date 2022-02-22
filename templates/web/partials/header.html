@@ -1,13 +1,18 @@
 <!-- header -->
-{% load static  %}
+{% load static %}
 <header id="header" class="home">
-    <div class="header-top">
-      <div class="container">
-        <div class="row"> 
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
 
 
-          <div class="desktop-user-info col-lg-4 col-md-6 col-sm-6 col-xs-12">
-              <!-- <div class="userinfo-inner">
+        <div class="desktop-user-info col-lg-2 col-md-2 col-sm-2 col-xs-2">
+          <div id="desktop_logo float-left">
+            <a href="{% url 'web:index' %}">
+              <img class="logo img-responsive" src="{% static 'web/images/Leadchem_logo.png' %}" alt="Demo Shop">
+            </a>
+          </div>
+          <!-- <div class="userinfo-inner">
               <ul class="userinfo">
                 <li class="checkout">
                   <a  href="checkoutpage.html">Checkout</a>
@@ -20,85 +25,38 @@
                 </li>    
               </ul>
             </div>  -->
-          </div>
-
-
-          <!-- desktop_logo -->
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div id="desktop_logo">
-              <a href="index.html">
-                <img class="logo img-responsive" src="{% static 'web/images/Leadchem_logo.png' %}" alt="Demo Shop">
-              </a>
-            </div>
-          </div>    
-          
-          
-
-          
-          <div class="header-right col-md-4 col-sm-6 col-lg-4 col-xs-6">
-            <ul class="social-inner d-flex">
-                <li class="facebook">
-                  <a href="categorypage_leftcolumn.html" target="_blank">
-                    <i class="fa fa-facebook"></i><span class="socialicon-label fb-icon-padding"></span>
-                  </a>
-                </li>
-                <li class="twitter">
-                  <a href="categorypage_leftcolumn.html" target="_blank">
-                    <i class="fa fa-twitter"></i><span class="socialicon-label fb-icon-padding"></span>
-                  </a>
-                </li>
-                <li class="pinterest">
-                  <a href="categorypage_leftcolumn.html" target="_blank">
-                    <i class="fa fa-pinterest-p"></i><span class="socialicon-label fb-icon-padding"></span>
-                  </a>
-                </li>
-                <li class="instagram">
-                  <a href="categorypage_leftcolumn.html" target="_blank">
-                    <i class="fa fa-instagram"></i><span class="socialicon-label fb-icon-padding"></span>
-                  </a>
-                </li>
-                <li class="youtube">
-                  <a href="categorypage_leftcolumn.html" target="_blank">
-                    <i class="fa fa-youtube"></i><span class="socialicon-label fb-icon-padding"></span>
-                  </a>
-                </li>
-              </ul>
-
-         
-
-          </div>
         </div>
-      </div>
-    </div> 
 
 
-    <div class="nav-full-width">
-      <div class="container">
-        <div class="row">
-          <!-- mega menu -->
-          <div id="_desktop_top_menu" class="menu js-top-menu hidden-sm-down">
-            <ul class="top-menu" id="top-menu" data-depth="0">  
-              <li class="cms-page" id="category-12">
-                <a class="dropdown-item" href="{% url 'web:index' %}" data-depth="0">
-                  Home
-                </a>
-              </li>
-              <li class="cms-page" id="cms-page-4">
-                <a class="dropdown-item" href="{% url 'web:about' %}" data-depth="0">
-                  About us
-                </a>
-              </li>
-              <li class="category" id="category-3">
-                <a class="dropdown-item" href="{% url 'web:product' %}" data-depth="0">Product</a>
-                <!-- <span class="float-xs-right hidden-lg-up">
+        <!-- desktop_logo -->
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+          <div class="nav-full-width">
+            <div class="container">
+              <div class="row">
+                <!-- mega menu -->
+                <div id="_desktop_top_menu" class="menu js-top-menu hidden-sm-down">
+                  <ul class="top-menu" id="top-menu" data-depth="0">
+                    <li class="cms-page" id="category-12">
+                      <a class="dropdown-item" href="{% url 'web:index' %}" data-depth="0">
+                        Home
+                      </a>
+                    </li>
+                    <li class="cms-page" id="cms-page-4">
+                      <a class="dropdown-item" href="{% url 'web:about' %}" data-depth="0">
+                        About us
+                      </a>
+                    </li>
+                    <li class="category" id="category-3">
+                      <a class="dropdown-item" href="{% url 'web:product' %}" data-depth="0">Product</a>
+                      <!-- <span class="float-xs-right hidden-lg-up">
                   <span data-target="#top_sub_menu_37079" data-toggle="collapse" class="navbar-toggler collapse-icons">
                     <i class="material-icons add"></i>
                     <i class="material-icons remove"></i>
                   </span>
                 </span> -->
-                <div class="popover sub-menu collapse" id="top_sub_menu_37079">
-                  <ul class="top-menu mainmenu-dropdown" data-depth="1">
-                    <!-- <li class="sub-category" id="category-4">
+                      <div class="popover sub-menu collapse" id="top_sub_menu_37079">
+                        <ul class="top-menu mainmenu-dropdown" data-depth="1">
+                          <!-- <li class="sub-category" id="category-4">
                       <a class="dropdown-item dropdown-submenu" href="productpage_leftcolumn.html" data-depth="1">
                          Product pages
                       </a>
@@ -128,28 +86,29 @@
                         </ul>
                       </div>
                     </li> -->
-                    <li class="sub-category" id="category-8">
-                      <!-- <a class="dropdown-item dropdown-submenu" href="categorypage_leftcolumn.html" data-depth="1">
+                          <li class="sub-category" id="category-8">
+                            <!-- <a class="dropdown-item dropdown-submenu" href="categorypage_leftcolumn.html" data-depth="1">
                         Category Pages
                       </a> -->
-                      <!-- <span class="float-xs-right hidden-lg-up">
+                            <!-- <span class="float-xs-right hidden-lg-up">
                           <span data-target="#top_sub_menu_71335" data-toggle="collapse" class="navbar-toggler collapse-icons">
                             <i class="material-icons add"></i>
                             <i class="material-icons remove"></i>
                           </span>
                         </span> -->
-                      <div class="collapse" id="top_sub_menu_71335">
-                        <ul class="top-menu" data-depth="2">
-                          {% for categories in category %}
-                          <li class="sub-category" id="category-9">
-                            <a class="dropdown-item" href="{% url 'web:category' categories.slug %}" data-depth="2">
-                              {{categories.title}} 
-                            </a>
-                          </li>
-                          {% endfor %}
+                            <div class="collapse" id="top_sub_menu_71335">
+                              <ul class="top-menu" data-depth="2">
+                                {% for categories in category %}
+                                <li class="sub-category" id="category-9">
+                                  <a class="dropdown-item" href="{% url 'web:category' categories.slug %}"
+                                    data-depth="2">
+                                    {{categories.title}}
+                                  </a>
+                                </li>
+                                {% endfor %}
 
 
-                          <!-- <li class="sub-category" id="category-10">
+                                <!-- <li class="sub-category" id="category-10">
                             <a class="dropdown-item" href="categorypage_leftcolumn.html" data-depth="2">
                               Category Left Column
                             </a>
@@ -159,10 +118,10 @@
                               Category Right Column
                             </a>
                           </li> -->
-                        </ul>
-                      </div>
-                    </li>
-                    <!-- <li class="sub-category" id="category-14">
+                              </ul>
+                            </div>
+                          </li>
+                          <!-- <li class="sub-category" id="category-14">
                       <a class="dropdown-item dropdown-submenu" href="cartpage.html" data-depth="1">
                          miscellaneous pages
                       </a>
@@ -192,20 +151,21 @@
                         </ul>
                       </div>
                     </li> -->
-                  </ul>
-                  <!-- <img class="category-image" src="{% static 'web/images/category-dropdown.jpg' %}" alt="category-image" title="Women"> -->
-                </div>
-              </li>
-              
-              <li class="category" id="category-1111">
-                <a class="dropdown-item" href="{% url 'web:blog' %}" data-depth="0">Updates</a>
-                <span class="float-xs-right hidden-lg-up">
-                  <span data-target="#top_sub_menu_122" data-toggle="collapse" class="navbar-toggler collapse-icons">
-                    <i class="material-icons add"></i>
-                    <i class="material-icons remove"></i>
-                  </span>
-                </span>
-                <!-- <div class="popover sub-menu collapse" id="top_sub_menu_122">
+                        </ul>
+                        <!-- <img class="category-image" src="{% static 'web/images/category-dropdown.jpg' %}" alt="category-image" title="Women"> -->
+                      </div>
+                    </li>
+
+                    <li class="category" id="category-1111">
+                      <a class="dropdown-item" href="{% url 'web:blog' %}" data-depth="0">Updates</a>
+                      <span class="float-xs-right hidden-lg-up">
+                        <span data-target="#top_sub_menu_122" data-toggle="collapse"
+                          class="navbar-toggler collapse-icons">
+                          <i class="material-icons add"></i>
+                          <i class="material-icons remove"></i>
+                        </span>
+                      </span>
+                      <!-- <div class="popover sub-menu collapse" id="top_sub_menu_122">
                   <ul class="top-menu mainmenu-dropdown" data-depth="1">
                     <li class="sub-category" id="category-18">
                       <a class="dropdown-item dropdown-submenu" href="blog_leftcolumn.html" data-depth="1">
@@ -269,36 +229,90 @@
                     </li>
                   </ul>                    
                 </div> -->
-              </li>
-              <li class="cms-page" id="cms-page-4">
-                <a class="dropdown-item" href="{% url 'web:gallery' %}" data-depth="0">
-                  Gallery
-                </a>
-              </li>
-              <li class="cms-page" id="cms-page-1">
-                <a class="dropdown-item" href="{% url 'web:contact' %}" data-depth="0">
-                  Contact us
-                </a>
-              </li>
-            </ul>
-            <div class="clearfix"></div>
-          </div>
-        <!-- mobile media -->
-          <div id="menu-icon" class="menu-icon hidden-lg-up">
-            <div class="menu-block">
-              <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">   
-                <symbol id="setup" viewBox="0 0 750 750"><title>setup</title><g> <rect y="46.06" width="344.339" height="29.52"></rect> </g><g> <rect y="156.506" width="344.339" height="29.52"></rect> </g><g> <rect y="268.748" width="344.339" height="29.531"></rect> </g></symbol>
-              </svg>
-              <svg class="icon" viewBox="0 0 40 40"><use xlink:href="#setup" x="25%" y="27%"></use></svg>
+                    </li>
+                    <li class="cms-page" id="cms-page-4">
+                      <a class="dropdown-item" href="{% url 'web:gallery' %}" data-depth="0">
+                        Gallery
+                      </a>
+                    </li>
+                    <li class="cms-page" id="cms-page-1">
+                      <a class="dropdown-item" href="{% url 'web:contact' %}" data-depth="0">
+                        Contact us
+                      </a>
+                    </li>
+                  </ul>
+                  
+                  <div class="clearfix"></div>
+                  
+                </div>
+                <!-- mobile media -->
+                <div id="menu-icon" class="menu-icon hidden-lg-up">
+                  
+                  <div class="menu-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                      <symbol id="setup" viewBox="0 0 750 750">
+                        <title>setup</title>
+                        <g>
+                          <rect y="46.06" width="344.339" height="29.52"></rect>
+                        </g>
+                        <g>
+                          <rect y="156.506" width="344.339" height="29.52"></rect>
+                        </g>
+                        <g>
+                          <rect y="268.748" width="344.339" height="29.531"></rect>
+                        </g>
+                      </symbol>
+                    </svg>
+                    <svg class="icon" viewBox="0 0 40 40">
+                      <use xlink:href="#setup" x="25%" y="27%"></use>
+                    </svg>
+                    
+                  </div>
+                 
+                </div>
+                <div id="_mobile_cart"></div>
+                <div id="_mobile_account"></div>
+                <div id="_mobile_seach_widget"></div>
+                <div class="clearfix"></div>
+              </div>
             </div>
           </div>
-          <div id="_mobile_cart"></div>
-          <div id="_mobile_account"></div>
-          <div id="_mobile_seach_widget"></div>
-          <div class="clearfix"></div>
+         
+        </div>
+
+
+
+
+        <div class="header-right col-md-2 col-sm-2 col-lg-2 col-xs-2">
+        
+          <ul class="social-inner d-flex float-right" style="margin: auto;">
+            <li class="facebook">
+              <a href="categorypage_leftcolumn.html" target="_blank">
+                <i class="fa fa-facebook"></i><span class="socialicon-label fb-icon-padding"></span>
+              </a>
+            </li>
+            <li class="twitter">
+              <a href="categorypage_leftcolumn.html" target="_blank">
+                <i class="fa fa-twitter"></i><span class="socialicon-label fb-icon-padding"></span>
+              </a>
+            </li>
+            
+            <li class="instagram">
+              <a href="categorypage_leftcolumn.html" target="_blank">
+                <i class="fa fa-instagram"></i><span class="socialicon-label fb-icon-padding"></span>
+              </a>
+            </li>
+            
+          </ul>
+
+
         </div>
       </div>
     </div>
+  </div>
+
+
+
 
 
 </header>

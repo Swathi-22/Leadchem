@@ -46,12 +46,12 @@
     <h1 class="h1 category-title breadcrumb-title">Category</h1>
     <ul>
       <li>
-        <a href="#index.html">
+        <a href="{% url 'web:index' %}">
           <span>Home</span>
         </a>
       </li>
       <li>
-        <span>Women</span>
+        <span>Products</span>
       </li>
     </ul>
   </nav>
@@ -64,19 +64,19 @@
         <section id="main">
           <input id="ishiCartURL" name="ishicarturl" value="#" type="hidden">
           <input id="ishiStaticToken" name="ishistatictoken" value="3d2187fdc78a54510e1e1670c3ff42b0" type="hidden">
-          <div class="block-category card card-block">
+          <!-- <div class="block-category card card-block">
             <div class="category-cover">
               <img src="{% static 'web/images/fullwidth-category_img.jpg' %}" alt="category-img">
             </div>
-          </div>
-          <div class="category-info">
+          </div> -->
+          <!-- <div class="category-info">
             <h3 class="h1">Women</h3>
             <div id="category-description">
               <p>You will find here all woman fashion collections.</p>
               <p>This category includes all the basics of your wardrobe and much more:</p>
               <p>shoes, accessories, printed t-shirts, feminine dresses, women's jeans!</p>
             </div>
-          </div>
+          </div> -->
           <div id="products" class="category-product-info">
             <div id="product-list-top">
               <div id="js-product-list-top" class="row products-selection">
@@ -85,7 +85,7 @@
                     <span id="grid-view" class="checked"></span>
                     <span id="list-view"></span>
                   </span>
-                  <p>There are 20 products.</p>
+                  <!-- <p>There are 20 products.</p> -->
                 </div>
                 <div class="col-lg-6">
                   <div class="row sort-by-row">
@@ -123,7 +123,7 @@
               <div class="products row" id="productContainer">
 
                 {% for products in product %}
-                <article class="product-miniature js-product-miniature col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 {{products.brand.id}}">
+                <article class="product-miniature js-product-miniature col-xs-12 col-sm-6 col-6 col-md-6 col-lg-4 col-xl-3 {{products.brand.id}}">
                   <div class="product-container product-thumb">
                     <div class="image">
                       <a href="productpage_leftcolumn.html" class="thumbnail product-thumbnail">
@@ -159,7 +159,8 @@
                       <div class="btn-cart">
                         <a class="button" href="productpage_leftcolumn.html">
                           <span class="button-cart">
-                            <img src="{% static 'web/svgs/add-to-cart.svg' %}" alt="add-to-cart">
+                            
+                            <img src="../../static/web/images/whatsapp.png" class="whatsapp-icon" alt="add-to-cart">
                           </span>
                           <!-- <i class="fa fa-shopping-cart"></i>
                           <span class="lblcart">SOLD OUT</span> -->
@@ -173,7 +174,7 @@
                         <span class="price-discount">9%</span>
                         <span class="price-sale">$50.00 </span>
                       </p> -->
-                      <p class="">
+                      <p class="para-color">
                         {{products.description}}</p>
                     </div>
                   </div>

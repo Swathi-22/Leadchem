@@ -7,7 +7,7 @@
     <h1 class="h1 category-title breadcrumb-title">Contact</h1>
     <ul>
       <li>
-        <a href="index.html">
+        <a href="/">
           <span>Home</span>
         </a>
       </li>
@@ -22,7 +22,7 @@
 <div id="wrapper">
   <div id="content-wrapper" class="top-wrapper">
     <div class="container">
-      <div class="">
+      <div class="mt-5">
         <section id="main">
           <div class="contact-form-information">
             <div class="row">
@@ -76,10 +76,10 @@
                         </li>
                         <li class="rss">
                           <a href="#" target="_blank">
-                            <i class="fa fa-rss"></i><span class="socialicon-label">Rss</span>
+                            <i class="fa fa-instagram"></i><span class="socialicon-label">Instagram</span>
                           </a>
                         </li>
-                        <li class="youtube">
+                        <!-- <li class="youtube">
                           <a href="#" target="_blank">
                             <i class="fa fa-youtube"></i><span class="socialicon-label">YouTube</span>
                           </a>
@@ -88,7 +88,7 @@
                           <a href="#" target="_blank">
                             <i class="fa fa-google-plus"></i><span class="socialicon-label">Google +</span>
                           </a>
-                        </li>
+                        </li> -->
                       </ul>
                     </div>
                   </div>
@@ -115,7 +115,7 @@
           </div>
           <div class="form-field">
 
-            <form method="POST" action="#" id="contact_form" class="contact-form">
+            <form method="POST"  class="contact-form ajax">
               <div class="form-fields row">
                 {% csrf_token %}
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 form-group">
@@ -151,4 +151,86 @@
   </div>
 </div>
 
+
+{% endblock %}
+{% block javascript %}
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  $(document).on('submit', 'form.ajax', function(e) {
+      e.preventDefault();
+      var $this = $(this);
+      var data = new FormData(this);
+      var action_url = $this.attr('action');
+      var reset = $this.hasClass('reset');
+      var reload = $this.hasClass('reload');
+      var redirect = $this.hasClass('redirect');
+      var redirect_url = $this.attr('data-redirect');
+
+      $.ajax({
+          url: action_url,
+          type: 'POST',
+          data: data,
+          cache: false,
+          contentType: false,
+          processData: false,
+          dataType: "json",
+
+          success: function(data) {
+
+              var status = data.status;
+              var title = data.title;
+              var message = data.message;
+              var pk = data.pk;
+
+              if (status == "true") {
+                  if (title) {
+                      title = title;
+                  } else {
+                      title = "Success";
+                  }
+
+                  Swal.fire({
+                      title: title,
+                      html: message,
+                      icon: 'success',
+                  }).then(function() {
+                      if (redirect) {
+                          window.location.href = redirect_url;
+                      }
+                      if (reload) {
+                          window.location.reload();
+                      }
+                      if (reset) {
+                          window.location.reset();
+                      }
+                  });
+
+              } else {
+                  if (title) {
+                      title = title;
+                  } else {
+                      title = "An Error Occurred";
+                  }
+                  Swal.fire({
+                      title: title,
+                      html: message,
+                      icon: "error"
+                  });
+
+              }
+          },
+          error: function(data) {
+              var title = "An error occurred";
+              var message = "something went wrong";
+              Swal.fire({
+                  title: title,
+                  html: message,
+                  icon: "error"
+              });
+          }
+      });
+  });
+</script>
 {% endblock %}

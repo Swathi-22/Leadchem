@@ -8,17 +8,18 @@
 
   <div id="top_home">
     <!-- slider -->
-    <section id="ishislider" class="ishislider-container owl-carousel">
+    <section id="ishislider" class="ishislider-container owl-carousel" style="background: #51a4cb9c;">
       <div class="item">
-        <a href="categorypage_leftcolumn.html" class="slideshow__link">
-          <img src="{% static 'web/images/slider/slide-1.png' %}" alt="Slide-1" class="img-responsive">
+        <a href="{% url 'web:product' %}" class="slideshow__link">
+          <img src="{% static 'web/images/Slide banner 1.png' %}" alt="Slide-1" class="img-responsive">
           <div class="container">
             <div class="slider-content col-md-5 col-sm-6 col-5" style="text-align:left">
-              <h3 class="slider-title">Beauty Cosmatic</h3>
-              <h2 class="main-title">Super Natural</h2>
+              <h3 class="slider-title">Lead Chem</h3>
+              <h2 class="main-title">Complete Construction Chemicals</h2>
               <div class="desc">
-                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or
-                  web designs. The passage is attributed to an unknown typesetter in the 15th century.</p>
+                <p>Lead Chem is the whole distributor of construction chemicals from various
+                  leading brands in Kerala. Explore our wide range of awesome construction
+                  chemicals of the finest quality.</p>
               </div>
               <div class="slider-btn btn-primary">SHOP NOW</div>
             </div>
@@ -26,15 +27,16 @@
         </a>
       </div>
       <div class="item">
-        <a href="categorypage_leftcolumn.html" class="slideshow__link">
-          <img src="{% static 'web/images/slider/slide-2.png' %}" alt="Slide-2" class="img-responsive">
+        <a href="{% url 'web:product' %}" class="slideshow__link">
+          <img src="{% static 'web/images/Slide banner 2.png' %}" alt="Slide-2" class="img-responsive">
           <div class="container">
             <div class="slider-content col-md-5 col-sm-6 col-5 slider-content-right" style="text-align:left">
-              <h3 class="slider-title"> Beauty Cosmatic</h3>
-              <h6 class="main-title">Big Discount</h6>
+              <h3 class="slider-title"> Lead Chem</h3>
+              <h6 class="main-title">Reliable Waterproofing Solutions</h6>
               <div class="desc">
-                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or
-                  web designs. The passage is attributed to an unknown typesetter in the 15th century.</p>
+                <p>Resist the damages caused by water with the best waterproofing chemicals from
+                  Lead Chem. Search your desired brand delivered by Lead Chem and secure
+                  your construction from damages.</p>
               </div>
               <div class="slider-btn btn-primary">SHOP NOW</div>
             </div>
@@ -48,7 +50,7 @@
         <div class="row">
           <div class="about1">
             <div class="col-xl-7 col-lg-6 col-md-12 col-xs-12 about-img-block">
-              <img class="about-img img-fluid" src="{% static 'web/images/about/about-us.png' %}" alt="Demo Shop">
+              <img class="about-img img-fluid" src="{% static 'web/images/about-image.png' %}" alt="Demo Shop">
             </div>
             <div class="col-xl-5 col-lg-6 col-md-12 col-xs-12 about-text">
               <div class="about-text-block">
@@ -57,30 +59,31 @@
                     THE PRODUCTS
                   </div>
                   <h2 class="title">
-                    All About Fabulous
+                    All About Lead Chem
                   </h2>
                 </div>
                 <div class="description">
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, to make a type specimen book.
+                    Lead Chem is the leading supplier of construction chemicals produced by different leading
+brands in the industry. Our aim is to deliver the best construction chemicals at the best price and
+finest quality. The major advantages with Lead chem are -
                   </p>
                 </div>
                 <div class="category_list">
                   <ul class="list-item">
                     <li>
-                      Eye and facial makeup
+                      Complete Construction Solutions
                     </li>
                     <li>
-                      Lipstick & Nail Art
+                      Products Of Finest Quality
                     </li>
                     <li>
-                      Hair Serum
+                      Best Prices For Chemicals
                     </li>
                     <li>
-                      Skincare Cream
+                      Availability Of Leading Brands
                     </li>
-                    <li>
+                    <!-- <li>
                       Makeup Brush
                     </li>
                     <li>
@@ -91,10 +94,10 @@
                     </li>
                     <li>
                       facial Kit
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
-                <a href="productpage_fullwidth.html" class="about-btn btn-primary">VIEW MORE</a>
+                <a href="{% url 'web:product' %}" class="about-btn btn-primary">VIEW MORE</a>
               </div>
             </div>
           </div>
@@ -106,58 +109,58 @@
     <section id="ishiservices" class="ishiservicesblock container">
       <div class="section-header text-center">
         <div class="subtitle">THE PRODUCTS</div>
-        <h2 class="title">Our Services</h2>
+        <h2 class="title">Best chemicals From Lead Chem</h2>
       </div>
       <div class="ishiservices row">
         <div class="services col-lg-3 col-md-6 col-sm-6 col-xs-6">
-          <a href="about-us.html">
+          <a href="{% url 'web:about' %}">
             <div class="service-img-outer">
               <div class="service-img">
                 <img src="{% static 'web/images/services/1.png' %}" alt="services1" class="img-fluid">
               </div>
             </div>
             <div class="service-block">
-              <div class="service-title">Free Worldwide</div>
-              <div class="service-desc">Lorem Ipsum is simply dummy text of the Testing online.</div>
+              <div class="service-title">Waterproofing Chemicals</div>
+              <div class="service-desc">Best waterproofing chemicals to protect from water damages.</div>
             </div>
           </a>
         </div>
         <div class="services col-lg-3 col-md-6 col-sm-6 col-xs-6">
-          <a href="about-us.html">
+          <a href="{% url 'web:about' %}">
             <div class="service-img-outer">
               <div class="service-img">
                 <img src="{% static 'web/images/services/2.png' %}" alt="services2" class="img-fluid">
               </div>
             </div>
             <div class="service-block">
-              <div class="service-title">Way To Buy</div>
-              <div class="service-desc">Lorem Ipsum is simply dummy text of the Testing online.</div>
+              <div class="service-title">Flooring Systems</div>
+              <div class="service-desc">The complete flooring solutions at the best price offerings.</div>
             </div>
           </a>
         </div>
         <div class="services col-lg-3 col-md-6 col-sm-6 col-xs-6">
-          <a href="about-us.html">
+          <a href="{% url 'web:about' %}">
             <div class="service-img-outer">
               <div class="service-img">
                 <img src="{% static 'web/images/services/3.png' %}" alt="services3" class="img-fluid">
               </div>
             </div>
             <div class="service-block">
-              <div class="service-title">Personal Session</div>
-              <div class="service-desc">Lorem Ipsum is simply dummy text of the Testing online.</div>
+              <div class="service-title">Tiles Fixing Adhesives</div>
+              <div class="service-desc">Fix your tiles with the best tile fixing adhesives from Lead Chem.</div>
             </div>
           </a>
         </div>
         <div class="services col-lg-3 col-md-6 col-sm-6 col-xs-6">
-          <a href="about-us.html">
+          <a href="{% url 'web:about' %}">
             <div class="service-img-outer">
               <div class="service-img">
                 <img src="{% static 'web/images/services/4.png' %}" alt="services4" class="img-fluid">
               </div>
             </div>
             <div class="service-block">
-              <div class="service-title">Gift Voucher</div>
-              <div class="service-desc">Lorem Ipsum is simply dummy text of the Testing online.</div>
+              <div class="service-title">Curing & Adhesives</div>
+              <div class="service-desc">Best quality curing and adhesives of the finest quality and price</div>
             </div>
           </a>
         </div>
@@ -173,15 +176,16 @@
       <div class="logo-bar">
         <div class="row">
           <div class="block_content">
+            {% for products in product %}
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 product-thumb">
               <div class="product-container">
                 <div class="image">
-                  <a href="productpage_leftcolumn.html" class="thumbnail product-thumbnail">
+                  <a href="{% url 'web:product' %}" class="thumbnail product-thumbnail">
                     <img src="{% static 'web/images/product/1.jpg' %}" alt="product-img">
-                    <img class="product-img-extra change" alt="product-img"
-                      src="{% static 'web/images/product/2.jpg' %}">
+                    <!-- <img class="product-img-extra change" alt="product-img"
+                      src="{% static 'web/images/product/2.jpg' %}"> -->
                   </a>
-                  <div class="product-comments">
+                  <!-- <div class="product-comments">
                     <div class="star_content">
                       <div class="star gray"></div>
                       <div class="star gray"></div>
@@ -189,47 +193,49 @@
                       <div class="star gray"></div>
                       <div class="star gray"></div>
                     </div>
-                  </div>
-                  <div class="button-group">
+                  </div> -->
+                  <!-- <div class="button-group">
                     <div class="btn-quickview">
-                      <a class="quickbox" href="productpage_leftcolumn.html">
+                      <a class="quickbox" href="{% url 'web:product' %}">
                         <img src="{% static 'web/svgs/quickview.svg' %}" alt="quickview">
                         <span class="lblcart">Quick View</span>
                       </a>
                     </div>
                     <div class="btn-wishlist">
-                      <a href="productpage_leftcolumn.html">
+                      <a href="{% url 'web:product' %}">
                         <img src="{% static 'web/svgs/wishlist-outline.svg' %}" alt="wishlist-outline">
                       </a>
                     </div>
-                  </div>
-                  <div class="btn-cart">
-                    <a class="button" href="productpage_leftcolumn.html">
+                  </div> -->
+
+                  <!-- <div class="btn-cart">
+                    <a class="button" href="{% url 'web:product' %}">
                       <span class="button-cart">
                         <img src="{% static 'web/svgs/add-to-cart.svg' %}" alt="add-to-cart">
                       </span>
                       <i class="fa fa-shopping-cart"></i>
                       <span class="lblcart">SOLD OUT</span>
                     </a>
-                  </div>
+                  </div> -->
                 </div>
                 <div class="caption">
-                  <div class="product-title"><a href="productpage_leftcolumn.html">Aroma Mocha</a></div>
-                  <p class="description">
-                    The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed sp..
+                  <div class="product-title "><a href="{% url 'web:product' %}">{{products.title}}</a></div>
+                  <p class="para-color">
+                    {{products.description}}
                   </p>
-                  <p class="price">
+                  <!-- <p class="price">
                     <span class="regular price-old">$55.00</span>
                     <span class="price-discount">9%</span>
                     <span class="price-sale">$50.00 </span>
-                  </p>
+                  </p> -->
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 product-thumb">
+            {% endfor %}
+            <!-- <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 product-thumb">
               <div class="product-container">
                 <div class="image">
-                  <a href="productpage_fullwidth.html" class="thumbnail product-thumbnail">
+                  <a href="{% url 'web:product' %}" class="thumbnail product-thumbnail">
                     <img src="{% static 'web/images/product/7.jpg' %}" alt="product-img">
                     <img class="product-img-extra change" alt="product-img"
                       src="{% static 'web/images/product/8.jpg' %}">
@@ -245,19 +251,19 @@
                   </div>
                   <div class="button-group">
                     <div class="btn-quickview">
-                      <a class="quickbox" href="productpage_fullwidth.html">
+                      <a class="quickbox" href="{% url 'web:product' %}">
                         <img src="{% static 'web/svgs/quickview.svg' %}" alt="quickview">
                         <span class="lblcart">Quick View</span>
                       </a>
                     </div>
                     <div class="btn-wishlist">
-                      <a href="productpage_fullwidth.html">
+                      <a href="{% url 'web:product' %}">
                         <img src="{% static 'web/svgs/wishlist-outline.svg' %}" alt="wishlist-outline">
                       </a>
                     </div>
                   </div>
                   <div class="btn-cart">
-                    <a class="button" href="productpage_fullwidth.html">
+                    <a class="button" href="{% url 'web:product' %}">
                       <span class="button-cart">
                         <img src="{% static 'web/svgs/add-to-cart.svg' %}" alt="add-to-cart">
                       </span>
@@ -267,7 +273,7 @@
                   </div>
                 </div>
                 <div class="caption">
-                  <div class="product-title"><a href="productpage_fullwidth.html">Brown cushion</a></div>
+                  <div class="product-title"><a href="{% url 'web:product' %}">Brown cushion</a></div>
                   <p class="description">
                     The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed sp..
                   </p>
@@ -283,7 +289,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 product-thumb">
               <div class="product-container">
                 <div class="image">
-                  <a href="productpage_rightcolumn.html" class="thumbnail product-thumbnail">
+                  <a href="{% url 'web:product' %}" class="thumbnail product-thumbnail">
                     <img src="{% static 'web/images/product/14.jpg' %}" alt="product-img">
                     <img class="product-img-extra change" alt="product-img"
                       src="{% static 'web/images/product/15.jpg' %}">
@@ -300,19 +306,19 @@
 
                   <div class="button-group">
                     <div class="btn-quickview">
-                      <a class="quickbox" href="productpage_rightcolumn.html">
+                      <a class="quickbox" href="{% url 'web:product' %}">
                         <img src="{% static 'web/svgs/quickview.svg' %}" alt="quickview">
                         <span class="lblcart">Quick View</span>
                       </a>
                     </div>
                     <div class="btn-wishlist">
-                      <a href="productpage_rightcolumn.html">
+                      <a href="{% url 'web:product' %}">
                         <img src="{% static 'web/svgs/wishlist-outline.svg' %}" alt="wishlist-outline">
                       </a>
                     </div>
                   </div>
                   <div class="btn-cart">
-                    <a class="button" href="productpage_rightcolumn.html">
+                    <a class="button" href="{% url 'web:product' %}">
                       <span class="button-cart">
                         <img src="{% static 'web/svgs/add-to-cart.svg' %}" alt="add-to-cart">
                       </span>
@@ -322,7 +328,7 @@
                   </div>
                 </div>
                 <div class="caption">
-                  <div class="product-title"><a href="productpage_rightcolumn.html">Authletic Stud</a></div>
+                  <div class="product-title"><a href="{% url 'web:product' %}">Authletic Stud</a></div>
                   <p class="description">
                     The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed sp..
                   </p>
@@ -332,7 +338,7 @@
 
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -345,15 +351,14 @@
             <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
               <div class="timer-text-block">
                 <h2 class="title">
-                  Best Deal Of the Day
+                  Best Waterproofing Solutions
                 </h2>
                 <div class="description">
                   <p>
-                    Lorem Ipsum is simply dummy text of the typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s.
+                    Safeguard your construction sites with the most quality waterproofing chemicals from Lead Chem. No more worry about water damages, we are here to protect your houses. Buy with us and enjoy the quality in every product.
                   </p>
                 </div>
-                <div class="bannercountdown" id="parallaxcountdown">
+                <!-- <div class="bannercountdown" id="parallaxcountdown">
                   <div class='countdown-days counter'>
                     <span class="data"></span>
                   </div>
@@ -366,32 +371,20 @@
                   <div class='countdown-seconds counter'>
                     <span class="data"></span>
                   </div>
-                </div>
-                <a href="categorypage_fullwidth.html" class="btn-primary para-btn">VIEW MORE</a>
+                </div> -->
+                <a href="{% url 'web:about' %}" class="btn-primary para-btn">VIEW MORE</a>
               </div>
             </div>
             <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 timer-image ">
               <div class="image-wrapper">
-                <img class="img-fluid" src="{% static 'web/images/parallax.png' %}" alt="Demo Shop">
+                <img class="img-fluid" src="{% static 'web/images/paralax-image.png' %}" alt="Demo Shop">
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <script>
-      $("#ishiparallaxbanner .parallax").each(function () {
-        var container = $(this).find('.bannercountdown');
-        var time = $(this).data('countdowntime');
-        $(container).countdown(time, function (event) {
-          $(this).find(".countdown-days .data").html(event.strftime('%D'));
-          $(this).find(".countdown-hours .data").html(event.strftime('%H'));
-          $(this).find(".countdown-minutes .data").html(event.strftime('%M'));
-          $(this).find(".countdown-seconds .data").html(event.strftime('%S'));
-        });
-      });
-    </script>
-
+  
     <!-- product-information -->
 
     <!-- <section id="ishi-singleproduct-section">
@@ -454,7 +447,7 @@
                 </div>
                 <div class="col-md-6 productfullldetails">
                   <h3 class="h1 product-title">
-                    <a href="productpage_fullwidth.html">Aroma Mocha</a>
+                    <a href="{% url 'web:product' %}">Aroma Mocha</a>
                   </h3>
                   <div class="product-information">
                     <div id="product-description-short-1">
@@ -850,61 +843,61 @@
           <div class="features-right col-lg-6 col-md-12 col-sm-12 col-xs-12">
             <div class="row">
               <div class="ishifeaturesblock-container item col-md-6 col-sm-6 col-xs-6">
-                <a href="categorypage_fullwidth.html" target="_blank" rel="nofollow">
+                <a href="{% url 'web:product' %}" target="_blank" rel="nofollow">
                   <div class="item-inner">
                     <div class="image-inner">
                       <img src="{% static 'web/images/features/features1.png' %}" alt="features1" class="img-fluid">
                     </div>
                     <div class="features-title">
-                      Highlighter Makeup
+                      Highest Quality
                     </div>
                     <div class="features-subtitle">
-                      <p>Lorem Ipsum is simply dummy text of the printing and Testing online</p>
+                      <p>Construction chemicals at the highest quality.</p>
                     </div>
                   </div>
                 </a>
               </div>
               <div class="ishifeaturesblock-container item col-md-6 col-sm-6 col-xs-6">
-                <a href="categorypage_fullwidth.html" target="_blank" rel="nofollow">
+                <a href="{% url 'web:product' %}" target="_blank" rel="nofollow">
                   <div class="item-inner">
                     <div class="image-inner">
                       <img src="{% static 'web/images/features/features2.png' %}" alt="features2" class="img-fluid">
                     </div>
                     <div class="features-title">
-                      Glossy Makeup
+                      Best Price
                     </div>
                     <div class="features-subtitle">
-                      <p>Lorem Ipsum is simply dummy text of the printing and Testing online</p>
+                      <p>Attractive prices for all construction chemicals.</p>
                     </div>
                   </div>
                 </a>
               </div>
               <div class="ishifeaturesblock-container item col-md-6 col-sm-6 col-xs-6">
-                <a href="categorypage_fullwidth.html" target="_blank" rel="nofollow">
+                <a href="{% url 'web:product' %}" target="_blank" rel="nofollow">
                   <div class="item-inner">
                     <div class="image-inner">
                       <img src="{% static 'web/images/features/features3.png' %}" alt="features3" class="img-fluid">
                     </div>
                     <div class="features-title">
-                      Matte Makeup
+                      Easy Application
                     </div>
                     <div class="features-subtitle">
-                      <p>Lorem Ipsum is simply dummy text of the printing and Testing online</p>
+                      <p>Simple application procedures for your ease.</p>
                     </div>
                   </div>
                 </a>
               </div>
               <div class="ishifeaturesblock-container item col-md-6 col-sm-6 col-xs-6">
-                <a href="categorypage_fullwidth.html" target="_blank" rel="nofollow">
+                <a href="{% url 'web:product' %}" target="_blank" rel="nofollow">
                   <div class="item-inner">
                     <div class="image-inner">
                       <img src="{% static 'web/images/features/features4.png' %}" alt="features4" class="img-fluid">
                     </div>
                     <div class="features-title">
-                      Semi Makeup
+                      More Durability
                     </div>
                     <div class="features-subtitle">
-                      <p>Lorem Ipsum is simply dummy text of the printing and Testing online</p>
+                      <p>Long-lasting products to save your money.</p>
                     </div>
                   </div>
                 </a>
@@ -1020,15 +1013,16 @@
             <div class="text-wrapper col-xl-5 col-lg-6 col-md-12 col-sm-12 col-xs-12 about-text2">
               <div class="about-text-block section-header">
                 <div class="subtitle">THE PRODUCTS</div>
-                <h2 class="title">What is the fabulous ?</h2>
+                <h2 class="title">What is Lead Chem?</h2>
                 <div class="description">
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.
+                    We are one of the leading suppliers of construction chemicals manufactured by the leading
+brands in the industry. We aim to provide you with the best construction chemicals at the best
+price and of the highest quality. With Lead Chem, you can purchase all the construction
+chemical brands that you love.
                   </p>
                 </div>
-                <a href="about-us.html" class="btn-primary about-btn">
+                <a href="{% url 'web:about' %}" class="btn-primary about-btn">
                   VIEW MORE
                 </a>
               </div>
@@ -1108,5 +1102,20 @@
   
 
 
+
+{% endblock %}
+{% block javascript %}
+<script>
+  $("#ishiparallaxbanner .parallax").each(function () {
+    var container = $(this).find('.bannercountdown');
+    var time = $(this).data('countdowntime');
+    $(container).countdown(time, function (event) {
+      $(this).find(".countdown-days .data").html(event.strftime('%D'));
+      $(this).find(".countdown-hours .data").html(event.strftime('%H'));
+      $(this).find(".countdown-minutes .data").html(event.strftime('%M'));
+      $(this).find(".countdown-seconds .data").html(event.strftime('%S'));
+    });
+  });
+</script>
 
 {% endblock %}

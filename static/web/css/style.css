@@ -10,3 +10,23 @@
 .image-width{
     width: 100%; 
 }
+.display-image{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-full-width {
+    border-top: none !important;
+    position: relative;
+    clear: both;
+}
+.fa {
+    font-size: 17px !important;
+}
+.para-color{
+    color: #888;
+}
+.whatsapp-icon{
+    width: 35px;
+    margin: auto;
+    padding-top: 8px;
+}
