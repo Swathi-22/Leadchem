@@ -112,7 +112,9 @@
     font-size: 14px; } }
     .product-thumb .product-title a {
       color: #222;
-      white-space: normal; }
+      white-space: normal;
+      font-size: 17px;
+     }
   .product-thumb .product-flags {
     margin: 0;
     position: absolute;
@@ -343,8 +345,8 @@
         cursor: not-allowed; }
       @media (max-width: 575px) {
   .product-thumb .btn-cart .button {
-    width: 44px;
-    height: 44px; } }
+    width: 34px;
+    height: 32px; } }
     .product-thumb .btn-cart i {
       display: none; }
   .product-thumb .countdown-container {
@@ -742,9 +744,10 @@
     overflow: hidden;
     position: relative; }
     @media (min-width: 992px) {
-  #footer .links {
+  /* #footer .links {
     max-width: 16%;
-    flex: 0 0 19.66667%; } }
+    flex: 0 0 19.66667%; }  */
+  }
     @media (max-width: 991px) {
   #footer .links {
     text-align: left; } }
@@ -1905,7 +1908,7 @@
   display: none; }
   #ishimanufacturerblock .manufacturer-container {
     padding: 40px 15px;
-    background-color: #2c709d;
+    background-color: #e5e9eb80;
     border-radius: 10px; }
     @media (max-width: 767px) {
   #ishimanufacturerblock .manufacturer-container {
@@ -2054,7 +2057,7 @@
 
 @media (min-width: 992px) {
     #_desktop_newsletter {
-      max-width: 27%;
+      max-width: 25%;
       flex: unset; } }
 
 .block_newsletter {
@@ -2414,7 +2417,8 @@
   background-image: url(../images/testimonial/testimonialbackground.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 80px 0; }
+  padding: 80px 0;
+  background: #95c7df; }
   @media (max-width: 767px) {
     .ishitestimonialsblock .bgimage {
       padding: 40px 0; } }
@@ -2427,7 +2431,7 @@
   .ishitestimonialsblock .bgimage .ishitestimonials-container {
     background-color: #fff;
     text-align: left;
-    padding: 65px 50px 40px;
+    padding: 65px 30px 40px;
     margin-top: 60px;
     position: relative; }
   @media (max-width: 1199px) {
@@ -9256,7 +9260,7 @@ section.checkout-step {
     letter-spacing: 0.4px; }
   @media (max-width: 991px) {
         .about-page .about-container .about-us p {
-          text-align: center !important; } }
+          text-align: justify !important; } }
   .about-page .about-container .about-us .about-btn {
     margin-top: 30px; }
   .about-page .about-container .about-us .about-btn svg {
@@ -11054,7 +11058,7 @@ h2 {
   font-size: 27px; }
 
 h3 {
-  font-size: 21px; }
+  font-size: 21px;  }
 
 h4 {
   font-size: 15px; }

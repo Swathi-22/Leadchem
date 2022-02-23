@@ -1,7 +1,22 @@
 {% extends 'web/base.html' %}
 {% load static %}
 {% block content %}
-      
+    <!-- Breadcrumb -->
+<div class="breadcrumb-container">
+  <nav data-depth="2" class="breadcrumb container">
+    <h1 class="h1 category-title breadcrumb-title">About Us</h1>
+    <ul>
+      <li>
+        <a href="{% url 'web:index' %}">
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <span>About</span>
+      </li>
+    </ul>
+  </nav>
+</div>  
       
       <!-- Cart page -->
       <div id="wrapper">
@@ -12,7 +27,7 @@
                 <div class="about-container">
                   <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12">                                
-                      <a href="{% url 'web:contact' %}" class="about-img"><img alt="about-img" src="{% static 'web/images/about-img1.jpg' %}"></a>
+                      <a href="{% url 'web:contact' %}" class="about-img"><img alt="about-img" src="{% static 'web/images/about-image.png' %}"></a>
                     </div>
                     <div class="about-us information-container col-lg-6 col-md-12 col-sm-12">
                       <h2 class="title-container"> THE COMPLETE SOLUTION FOR CONSTRUCTION CHEMICALS</h2>
@@ -74,7 +89,7 @@
                       </div>             
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">                                
-                      <a href="{% url 'web:contact' %}" class="about-img"><img alt="about-img" src="{% static 'web/images/about-img2.jpg' %}"></a>
+                      <a href="{% url 'web:contact' %}" class="about-img"><img alt="about-img" src="{% static 'web/images/feature-image.png' %}"></a>
                     </div>
                   </div>
                 </div>                 

@@ -5,6 +5,7 @@
       <div class="container">
         <div class="row">
           <div id="_mobile_newsletter" class="col-md-12"></div>
+
           <!-- contactblock -->
           <div class="block-contact col-lg-3 col-md-12 col-sm-12 col-xs-12">
             <div id="contact-info-container" class="footer-contact">
@@ -34,11 +35,11 @@
           </div>
 
           <!-- myaccount -->
-          <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 links wrapper footer-block">
-            <h3 class="h3 title_block hidden-md-down">Your Account</h3>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 links wrapper footer-block">
+            <h3 class="h3 title_block hidden-md-down">QUICK LINKS</h3>
             <div class="footer-title clearfix hidden-lg-up collapsed" data-target="#footer_account_list"
               data-toggle="collapse">
-              <span class="h3">Your account</span>
+              <span class="h3">QUICK LINKS</span>
               <span class="float-xs-right">
                 <span class="navbar-toggler collapse-icons">
                   <i class="material-icons add"></i>
@@ -48,39 +49,44 @@
             </div>
             <ul id="footer_account_list" class="footer-dropdown collapse">
               <li>
-                <a class="cms-page-link" href="user-register.html">
-                  Personal info
+                <a class="cms-page-link" href="{% url 'web:index' %}">
+                  Home
                 </a>
               </li>
               <li>
-                <a class="cms-page-link" href="user-register.html">
-                  Orders
+                <a class="cms-page-link" href="{% url 'web:about' %}">
+                  About Us
                 </a>
               </li>
               <li>
-                <a class="cms-page-link" href="user-register.html">
-                  Credit slips
+                <a class="cms-page-link" href="{% url 'web:product' %}">
+                 Products
                 </a>
               </li>
               <li>
-                <a class="cms-page-link" href="user-register.html">
-                  Addresses
+                <a class="cms-page-link" href="{% url 'web:blog' %}">
+                  Updates
                 </a>
               </li>
               <li>
-                <a class="cms-page-link" href="mywishlistpage.html">
-                  My Wishlists
+                <a class="cms-page-link" href="{% url 'web:gallery' %}">
+                  Gallery
+                </a>
+              </li>
+              <li>
+                <a class="cms-page-link" href="{% url 'web:contact' %}">
+                  Contact Us
                 </a>
               </li>
             </ul>
           </div>
 
           <!-- linklist -->
-          <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 links wrapper footer-block">
-            <h3 class="h3 title_block hidden-md-down">Our Company</h3>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 links wrapper footer-block">
+            <h3 class="h3 title_block hidden-md-down">CATEGORY</h3>
             <div class="footer-title clearfix hidden-lg-up collapsed" data-target="#footer_sub_menu_83281"
               data-toggle="collapse">
-              <span class="h3 title_block">Our Company</span>
+              <span class="h3 title_block">CATEGORY</span>
               <span class="navbar-toggler collapse-icons">
                 <i class="material-icons add"></i>
                 <i class="material-icons remove"></i>
@@ -88,81 +94,43 @@
             </div>
             <ul id="footer_sub_menu_83281" class="footer-dropdown collapse">
               <li>
-                <a class="cms-page-link" href="about-us.html">
-                  About Us
+                <a class="cms-page-link" href="{% url 'web:product' %}">
+                  Waterproofing Chemicals
                 </a>
               </li>
               <li>
-                <a class="cms-page-link" href="about-us.html">
-                  Legal Notice
+                <a class="cms-page-link" href="{% url 'web:product' %}">
+                  Flooring Systems
                 </a>
               </li>
               <li>
-                <a class="cms-page-link" href="about-us.html">
-                  Delivery Information
+                <a class="cms-page-link" href="{% url 'web:product' %}">
+                  Tiles Fixing Adhesives
                 </a>
               </li>
               <li>
-                <a class="cms-page-link" href="about-us.html">
-                  Privacy Policy
+                <a class="cms-page-link" href="{% url 'web:product' %}">
+                  Curing & Adhesives
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a class="cms-page-link" href="about-us.html">
                   Terms & Conditions
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
 
-          <!-- linklist -->
-          <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 links wrapper footer-block">
-            <h3 class="h3 title_block hidden-md-down">Products</h3>
-            <div class="footer-title clearfix hidden-lg-up collapsed" data-target="#footer_sub_menu_83280"
-              data-toggle="collapse">
-              <span class="h3 title_block">Products</span>
-              <span class="navbar-toggler collapse-icons">
-                <i class="material-icons add"></i>
-                <i class="material-icons remove"></i>
-              </span>
-            </div>
-            <ul id="footer_sub_menu_83280" class="footer-dropdown collapse">
-              <li>
-                <a class="cms-page-link" href="about-us.html">
-                  Delivery
-                </a>
-              </li>
-              <li>
-                <a class="cms-page-link" href="about-us.html">
-                  Legal Notice
-                </a>
-              </li>
-              <li>
-                <a class="cms-page-link" href="categorypage_leftcolumn.html">
-                  Prices drop
-                </a>
-              </li>
-              <li>
-                <a class="cms-page-link" href="categorypage_leftcolumn.html">
-                  New products
-                </a>
-              </li>
-              <li>
-                <a class="cms-page-link" href="categorypage_leftcolumn.html">
-                  Best sales
-                </a>
-              </li>
-            </ul>
-          </div>
+        
 
           <!-- newsletter -->
-          <div id="_desktop_newsletter" class="col-xl-12">
+          <div id="_desktop_newsletter" class="col-xl-3 col-lg-3 ">
             <div class="row">
               <div class="block_newsletter col-md-12 col-sm-12 col-xs-12">
                 <div id="newsletter-container" class="box-content">
                   <div class="newsletter_text">
                     <div class="email-icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                      <!-- <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                         <symbol id="mail" viewBox="0 0 500 500">
                           <title>mail</title>
                           <path
@@ -172,12 +140,12 @@
                           <rect width="140.5" x="186.1" y="181.8" height="19.8"></rect>
                           <rect width="140.5" x="186.1" y="245.3" height="19.8"></rect>
                         </symbol>
-                      </svg>
+                      </svg> -->
                       <svg class="icon" viewBox="0 0 40 40">
                         <use xlink:href="#mail" x="0%" y="0%"></use>
                       </svg>
                     </div>
-                    <h2 class="heading">Join Our Newsletter</h2>
+                    <h2 class="heading">Get In Touch With Us</h2>
                     <div class="block-container">
                       <ul class="social-inner">
                         <li class="facebook">
@@ -201,32 +169,17 @@
                     </div>
                   </div>
                   <div class="newsletter_form">
-                    <form action="https://demo.ishithemes.com/html/fabulous/Layout001/contactpage.html" method="post">
-                      <input name="email" value="" placeholder="Enter Your Email" type="text" required>
-                      <span class="input-group__btn">
-                        <button class="button btn-submit" type="submit">
-                          <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-                            <symbol id="send" viewBox="0 0 900 900">
-                              <title>send</title>
-                              <path
-                                d="m465.882 0-465.882 262.059 148.887 55.143 229.643-215.29-174.674 235.65.142.053-.174-.053v128.321l83.495-97.41 105.77 39.175z">
-                              </path>
-                            </symbol>
-                          </svg>
-                          <svg class="icon" viewBox="0 0 40 40">
-                            <use xlink:href="#send" x="20%" y="25%"></use>
-                          </svg>
-                        </button>
-                      </span>
-                    </form>
+                   
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
+
     <div class="footer-after">
       <div class="container">
         <div class="row">
@@ -256,5 +209,6 @@
         </div>
       </div>
     </div>
+
     <a id="slidetop"></a>
   </footer>

@@ -24,9 +24,67 @@
 }
 .para-color{
     color: #888;
+    text-align: justify;
 }
 .whatsapp-icon{
     width: 35px;
     margin: auto;
     padding-top: 8px;
+}
+.fa-whatsapp:before {
+    content: "\f232";
+    font-size: 35px;
+    display: block;
+    color: white;
+    padding: 10px;
+}
+
+.form-size {
+    margin: auto;
+    width: 46%;
+}
+.h3-align{
+    text-align: center;
+}
+.modal{
+    background: white;
+    box-shadow: 1px 2px 3px 4px white;
+    height: 300px;
+    margin: auto;
+    padding: 21px;
+}
+.icon-color{
+    color: white;
+}
+
+
+@media  screen and (max-width: 575px) {
+    .para-color {
+        color: #888;
+        font-size: 11px;
+        line-height: 13px;
+        text-align: justify;
+    }
+    .fa-whatsapp:before {
+        content: "\f232";
+        font-size: 21px;
+        display: block;
+        color: white;
+        padding: 5px;
+    }
+    .form-size {
+        margin: auto;
+        width: 100%;
+    }
+    .fb-insta-twi-icon{
+        padding-top: 14px;
+    }
+
+   
+}
+
+@media  screen and (min-width:575px){
+    .ul-display{
+        display: none !important;
+    }
 }

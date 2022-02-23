@@ -6,22 +6,21 @@ from tinymce.models import HTMLField
 
 # Create your models here.
 class Testimonial(models.Model):
+    name=models.CharField(max_length=100)
+    description=models.CharField(max_length=335)
+    designation=models.CharField(max_length=100)
     image = VersatileImageField('Image',upload_to='index/',ppoi_field='ppoi')
     ppoi = PPOIField('Image PPOI')
-    title=models.CharField(max_length=225)
-    description=models.CharField(max_length=335)
-    name=models.CharField(max_length=100)
-    designation=models.CharField(max_length=100)
 
     def __str__(self):
-        return self.title
+        return self.name
 
 
 
 class Brand(models.Model):
+    title=models.CharField(max_length=225)
     image = VersatileImageField('Image',upload_to='index/',ppoi_field='ppoi')
     ppoi = PPOIField('Image PPOI')
-    title=models.CharField(max_length=225)
 
     def __str__(self):
         return self.title
@@ -43,9 +42,9 @@ class Update(models.Model):
 
 
 class Gallery(models.Model):
+    title=models.CharField(max_length=225)
     image = VersatileImageField('Image',upload_to='gallery/',ppoi_field='ppoi')
     ppoi = PPOIField('Image PPOI')
-    title=models.CharField(max_length=225)
 
     def __str__(self):
         return self.title
@@ -70,12 +69,12 @@ class Category(models.Model):
 
 
 class Product(models.Model):
-    image = VersatileImageField('Image',upload_to='product/',ppoi_field='ppoi')
-    ppoi = PPOIField('Image PPOI')
+    brand=models.ForeignKey(Brand,on_delete=models.CASCADE)
     title=models.CharField(max_length=225)
     description=models.CharField(max_length=500)
     category=models.ForeignKey(Category,on_delete=models.CASCADE)
-    brand=models.ForeignKey(Brand,on_delete=models.CASCADE)
+    image = VersatileImageField('Image',upload_to='product/',ppoi_field='ppoi')
+    ppoi = PPOIField('Image PPOI')
     is_popular=models.BooleanField(default=False)
 
     def __str__(self):

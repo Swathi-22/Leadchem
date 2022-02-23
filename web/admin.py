@@ -27,7 +27,7 @@ class BrandAdmin(admin.ModelAdmin):
 
 @admin.register(Testimonial)
 class TestimonialAdmin(admin.ModelAdmin):
-    list_display = ( 'title', 'description',)
+    list_display = ( 'name', 'description',)
 
 
 @admin.register(Contact)
