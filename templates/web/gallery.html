@@ -2,37 +2,37 @@
 {% load static %}
 {% block content %}
 <div class="breadcrumb-container">
-    <nav data-depth="2" class="breadcrumb container">
-      <h1 class="h1 category-title breadcrumb-title">Gallery</h1>
-      <ul>
-        <li>
-          <a href="{% url 'web:index' %}">
-            <span>Home</span>
-          </a>
-        </li>
-        <li>
-          <span>Gallery</span>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <nav data-depth="2" class="breadcrumb container">
+    <h1 class="h1 category-title breadcrumb-title">Gallery</h1>
+    <ul>
+      <li>
+        <a href="{% url 'web:index' %}">
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <span>Gallery</span>
+      </li>
+    </ul>
+  </nav>
+</div>
 <div class="container">
-    <div class="row mt-5">
-        <div class="gallery-image display-image">
-          {% for galleries in gallery %}
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card card-borer">
+  <div class="row mt-5">
+    <div class="gallery-image display-image">
+      {% for galleries in gallery %}
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="card card-borer">
 
-                    <a href="{% url 'web:gallery' %}"  class="about-img">
-                        <img alt="about-img" src="{{galleries.image.url}}" class="offset-top-left-shadow image-width"></a>
-                </div>
-            </div>
-            {% endfor %}
-           
-           
+          <div class="about-img">
+            <img alt="about-img" src="{{galleries.image.crop.720x480}}" class="offset-top-left-shadow image-width"></div>
         </div>
-        
+      </div>
+      {% endfor %}
+
+
     </div>
+
+  </div>
 </div>
 
 {% endblock %}

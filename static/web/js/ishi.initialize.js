@@ -1,7 +1,4 @@
-/**
- * ishiinitialize v1.1
- * JavaScript to initalize various theme components
- */
+
 
 var opencart_responsive_current_width = window.innerWidth;
 var opencart_responsive_min_width = 992;

@@ -12,6 +12,9 @@ class Testimonial(models.Model):
     image = VersatileImageField('Image',upload_to='index/',ppoi_field='ppoi')
     ppoi = PPOIField('Image PPOI')
 
+    class Meta:
+        verbose_name_plural = ("Testimonial")
+
     def __str__(self):
         return self.name
 
@@ -45,6 +48,9 @@ class Gallery(models.Model):
     title=models.CharField(max_length=225)
     image = VersatileImageField('Image',upload_to='gallery/',ppoi_field='ppoi')
     ppoi = PPOIField('Image PPOI')
+
+    class Meta:
+        verbose_name_plural = ("Gallery")
 
     def __str__(self):
         return self.title

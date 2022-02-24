@@ -554,6 +554,7 @@
   #footer a {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    text-align: left;
     letter-spacing: 0.5px;
     font-size: 14px;
     color: #666;
@@ -682,6 +683,7 @@
         #footer .block-contact .block .content a, #footer .block-contact .block .content p {
           color: #666;
           font-size: 14px;
+          text-align: left;
           font-weight: 400;
           margin-bottom: 0; }
   #footer .block-container {
@@ -1766,7 +1768,9 @@
     #ishislider .slider-content .desc {
       display: none; } }
     #ishislider .slider-content .desc p {
-      color: white; }
+      color: white;
+      text-align: justify; 
+    }
     @media (max-width: 767px) {
     #ishislider .slider-content .slider-btn {
       padding: 8px 16px;
@@ -2046,6 +2050,7 @@
     .ishiservicesblock .ishiservices .services .service-block .service-desc {
       font-weight: 400;
       font-size: 14px;
+      text-align: center;
       color: #777;
       line-height: 24px;
       letter-spacing: 0.42px;
@@ -2315,6 +2320,7 @@
           margin-bottom: 20px; } }
   .ishiaboutusblock .about2 .section-header .description p {
     color: #777;
+    text-align: justify;
     margin-bottom: 10px;
     line-height: 24px;
     letter-spacing: 0.5px;
@@ -2815,6 +2821,7 @@
           margin-bottom: 20px; } }
   #ishiparallaxbanner .parallax .timer-text-block .description p {
     margin-bottom: 10px;
+    text-align: justify;
     line-height: 24px;
     letter-spacing: 0.5px;
     font-size: 15px;
@@ -9166,6 +9173,7 @@ section.checkout-step {
     text-transform: capitalize; }
   .about-page .about-services .service p {
     color: #777;
+    text-align: center;
     font-size: 13px;
     margin-bottom: 0; }
   .about-page .about-services .service:hover h3 {
@@ -9247,13 +9255,13 @@ section.checkout-step {
     text-transform: uppercase;
     position: relative;
     display: block;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 400;
     letter-spacing: 0;
     margin-bottom: 20px;
     padding: 0; }
   .about-page .about-container .about-us p {
-    text-align: left;
+    text-align: justify;
     font-size: 15px;
     line-height: 24px;
     color: #777;
@@ -9282,7 +9290,7 @@ section.checkout-step {
   /* If media is below 992 */
   background: url(../images/breadcrumb.jpg) no-repeat top;
   background-attachment: fixed;
-  padding: 60px 0;
+  padding: 48px 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -9298,7 +9306,7 @@ section.checkout-step {
     text-align: center;
     padding: 0 15px; }
   .breadcrumb-container .breadcrumb .breadcrumb-title {
-    font-size: 22px;
+    font-size: 50px;
     line-height: normal;
     margin-bottom: 5px;
     color: #000;
@@ -9307,10 +9315,13 @@ section.checkout-step {
     letter-spacing: 0.5px; }
   .breadcrumb-container .breadcrumb ul, .breadcrumb-container .breadcrumb ol {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    font-size: 23px; }
   .breadcrumb-container .breadcrumb li {
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    
+   }
   .breadcrumb-container .breadcrumb li:after {
     content: "-";
     color: #000;
@@ -9326,6 +9337,20 @@ section.checkout-step {
   background-color: #f5f5f5;
   /****** Category Page ********/ }
   @media (max-width: 575px) {
+    .breadcrumb-container .breadcrumb .breadcrumb-title {
+      font-size: 27px;
+      line-height: normal;
+      margin-bottom: 5px;
+      color: #000;
+      font-weight: 500;
+      text-transform: capitalize;
+      letter-spacing: 0.5px; }
+
+      .breadcrumb-container .breadcrumb ul, .breadcrumb-container .breadcrumb ol {
+        margin: 0;
+        padding: 0;
+        font-size: 14px; }
+
   .pagination {
     display: block;
     overflow: hidden; } }
@@ -9339,6 +9364,22 @@ section.checkout-step {
   .pagination .pagination-right {
     float: right;
     text-align: right; }
+
+    @media screen and (min-width:576px) and (max-width: 991px){
+      .breadcrumb-container .breadcrumb .breadcrumb-title {
+        font-size: 33px;
+        line-height: normal;
+        margin-bottom: 5px;
+        color: #000;
+        font-weight: 500;
+        text-transform: capitalize;
+        letter-spacing: 0.5px; }
+        .breadcrumb-container .breadcrumb ul, .breadcrumb-container .breadcrumb ol {
+          margin: 0;
+          padding: 0;
+          font-size: 15px; }
+
+    }
   @media (max-width: 575px) {
     .pagination .pagination-right {
       text-align: center; } }
@@ -9459,7 +9500,7 @@ section.checkout-step {
     color: #a9a9a9;
     padding: 10px; }
   .products-sort-order .select-list:hover {
-    background: #000;
+    background: #92c6df;
     color: white;
     text-decoration: none; }
   .products-sort-order .dropdown-menu {

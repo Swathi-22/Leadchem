@@ -3,329 +3,331 @@
 {% block content %}
 
 
-  
 
 
-  <div id="top_home">
-    <!-- slider -->
-    <section id="ishislider" class="ishislider-container owl-carousel" style="background: #51a4cb9c;">
-      <div class="item">
-        <a href="{% url 'web:product' %}" class="slideshow__link">
-          <img src="{% static 'web/images/Slide banner 1.png' %}" alt="Slide-1" class="img-responsive">
-          <div class="container">
-            <div class="slider-content col-md-5 col-sm-6 col-5" style="text-align:left">
-              <h3 class="slider-title">Lead Chem</h3>
-              <h2 class="main-title">Complete Construction Chemicals</h2>
-              <div class="desc">
-                <p>Lead Chem is the whole distributor of construction chemicals from various
-                  leading brands in Kerala. Explore our wide range of awesome construction
-                  chemicals of the finest quality.</p>
-              </div>
-              <div class="slider-btn btn-primary">SHOP NOW</div>
+
+<div id="top_home">
+  <!-- slider -->
+  <section id="ishislider" class="ishislider-container owl-carousel" style="background: #51a4cb9c;">
+    <div class="item">
+      <a href="{% url 'web:product' %}" class="slideshow__link">
+        <img src="{% static 'web/images/Slide banner 1.png' %}" alt="Slide-1" class="img-responsive">
+        <div class="container">
+          <div class="slider-content col-md-5 col-sm-6 col-5" style="text-align:left">
+            <h3 class="slider-title">Lead Chem</h3>
+            <h2 class="main-title">Complete Construction Chemicals</h2>
+            <div class="desc">
+              <p>Lead Chem is the whole distributor of construction chemicals from various
+                leading brands in Kerala. Explore our wide range of awesome construction
+                chemicals of the finest quality.</p>
             </div>
+            <div class="slider-btn btn-primary">SHOP NOW</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="item">
+      <a href="{% url 'web:product' %}" class="slideshow__link">
+        <img src="{% static 'web/images/Slide banner 2.png' %}" alt="Slide-2" class="img-responsive">
+        <div class="container">
+          <div class="slider-content col-md-5 col-sm-6 col-5 slider-content-right" style="text-align:left">
+            <h3 class="slider-title"> Lead Chem</h3>
+            <h6 class="main-title">Reliable Waterproofing Solutions</h6>
+            <div class="desc">
+              <p>Resist the damages caused by water with the best waterproofing chemicals from
+                Lead Chem. Search your desired brand delivered by Lead Chem and secure
+                your construction from damages.</p>
+            </div>
+            <div class="slider-btn btn-primary">SHOP NOW</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- aboutusblock -->
+  <section class="About-container ishiaboutusblock">
+    <div class="container">
+      <div class="row">
+        <div class="about1">
+          <div class="col-xl-7 col-lg-6 col-md-12 col-xs-12 about-img-block">
+            <img class="about-img img-fluid" src="{% static 'web/images/about-image.png' %}" alt="Demo Shop">
+          </div>
+          <div class="col-xl-5 col-lg-6 col-md-12 col-xs-12 about-text">
+            <div class="about-text-block">
+              <div class="section-header">
+                <div class="subtitle">
+                  THE PRODUCTS
+                </div>
+                <h2 class="title">
+                  All About Lead Chem
+                </h2>
+              </div>
+              <div class="description">
+                <p class="para-color">
+                  Lead Chem is the leading supplier of construction chemicals produced by different leading
+                  brands in the industry. Our aim is to deliver the best construction chemicals at the best price and
+                  finest quality. The major advantages with Lead chem are -
+                </p>
+              </div>
+              <div class="category_list">
+                <ul class="list-item">
+                  <li>
+                    Complete Construction Solutions
+                  </li>
+                  <li>
+                    Products Of Finest Quality
+                  </li>
+                  <li>
+                    Best Prices For Chemicals
+                  </li>
+                  <li>
+                    Availability Of Leading Brands
+                  </li>
+
+                </ul>
+              </div>
+              <a href="{% url 'web:product' %}" class="about-btn btn-primary">VIEW MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- serviceblock -->
+  <section id="ishiservices" class="ishiservicesblock container">
+    <div class="section-header text-center">
+      <div class="subtitle">THE PRODUCTS</div>
+      <h2 class="title">Best chemicals From Lead Chem</h2>
+    </div>
+    <div class="ishiservices row">
+      <div class="services col-lg-3 col-md-6 col-sm-6 col-xs-6">
+        <a href="{% url 'web:about' %}">
+          <div class="service-img-outer">
+            <div class="service-img">
+              <img src="{% static 'web/images/waterproofing chemicals.png' %}" alt="services1" class="img-fluid">
+            </div>
+          </div>
+          <div class="service-block">
+            <div class="service-title">Waterproofing Chemicals</div>
+            <div class="service-desc">Best waterproofing chemicals to protect from water damages.</div>
           </div>
         </a>
       </div>
-      <div class="item">
-        <a href="{% url 'web:product' %}" class="slideshow__link">
-          <img src="{% static 'web/images/Slide banner 2.png' %}" alt="Slide-2" class="img-responsive">
-          <div class="container">
-            <div class="slider-content col-md-5 col-sm-6 col-5 slider-content-right" style="text-align:left">
-              <h3 class="slider-title"> Lead Chem</h3>
-              <h6 class="main-title">Reliable Waterproofing Solutions</h6>
-              <div class="desc">
-                <p>Resist the damages caused by water with the best waterproofing chemicals from
-                  Lead Chem. Search your desired brand delivered by Lead Chem and secure
-                  your construction from damages.</p>
-              </div>
-              <div class="slider-btn btn-primary">SHOP NOW</div>
+      <div class="services col-lg-3 col-md-6 col-sm-6 col-xs-6">
+        <a href="{% url 'web:about' %}">
+          <div class="service-img-outer">
+            <div class="service-img">
+              <img src="{% static 'web/images/Flooring.png' %}" alt="services2" class="img-fluid">
             </div>
+          </div>
+          <div class="service-block">
+            <div class="service-title">Flooring Systems</div>
+            <div class="service-desc">The complete flooring solutions at the best price offerings.</div>
           </div>
         </a>
       </div>
-    </section>
-    <!-- aboutusblock -->
-    <section class="About-container ishiaboutusblock">
+      <div class="services col-lg-3 col-md-6 col-sm-6 col-xs-6">
+        <a href="{% url 'web:about' %}">
+          <div class="service-img-outer">
+            <div class="service-img">
+              <img src="{% static 'web/images/Tiles Fixing.png' %}" alt="services3" class="img-fluid">
+            </div>
+          </div>
+          <div class="service-block">
+            <div class="service-title">Tiles Fixing Adhesives</div>
+            <div class="service-desc">Fix your tiles with the best tile fixing adhesives from Lead Chem.</div>
+          </div>
+        </a>
+      </div>
+      <div class="services col-lg-3 col-md-6 col-sm-6 col-xs-6">
+        <a href="{% url 'web:about' %}">
+          <div class="service-img-outer">
+            <div class="service-img">
+              <img src="{% static 'web/images/Curing.png' %}" alt="services4" class="img-fluid">
+            </div>
+          </div>
+          <div class="service-block">
+            <div class="service-title">Curing & Adhesives</div>
+            <div class="service-desc">Best quality curing and adhesives of the finest quality and price</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- product block -->
+  <section id="ishiproductsblock" class="ishiproductsblock container">
+    <div class="section-header text-center">
+      <div class="subtitle">THE LATEST</div>
+      <h2 class="title">Fabulous Products</h2>
+    </div>
+    <div class="logo-bar">
+      <div class="row">
+        <div class="block_content">
+          {% for products in product %}
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 product-thumb">
+            <div class="product-container">
+              <div class="image">
+                <a href="{% url 'web:product' %}" class="thumbnail product-thumbnail">
+                  <img src="{{products.image.crop.370x370}}" alt="product-img">
+
+                </a>
+
+              </div>
+              <div class="caption">
+                <div class="product-title "><a href="{% url 'web:product' %}">{{products.title}}</a></div>
+                <p class="para-color">
+                  {{products.description}}
+                </p>
+
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- parallax block -->
+  <section id="ishiparallaxbanner" class="clearfix">
+    <div class="parallax" data-countdowntime="2022-11-30">
       <div class="container">
         <div class="row">
-          <div class="about1">
-            <div class="col-xl-7 col-lg-6 col-md-12 col-xs-12 about-img-block">
-              <img class="about-img img-fluid" src="{% static 'web/images/about-image.png' %}" alt="Demo Shop">
-            </div>
-            <div class="col-xl-5 col-lg-6 col-md-12 col-xs-12 about-text">
-              <div class="about-text-block">
-                <div class="section-header">
-                  <div class="subtitle">
-                    THE PRODUCTS
-                  </div>
-                  <h2 class="title">
-                    All About Lead Chem
-                  </h2>
-                </div>
-                <div class="description">
-                  <p class="para-color">
-                    Lead Chem is the leading supplier of construction chemicals produced by different leading
-brands in the industry. Our aim is to deliver the best construction chemicals at the best price and
-finest quality. The major advantages with Lead chem are -
-                  </p>
-                </div>
-                <div class="category_list">
-                  <ul class="list-item">
-                    <li>
-                      Complete Construction Solutions
-                    </li>
-                    <li>
-                      Products Of Finest Quality
-                    </li>
-                    <li>
-                      Best Prices For Chemicals
-                    </li>
-                    <li>
-                      Availability Of Leading Brands
-                    </li>
-                    
-                  </ul>
-                </div>
-                <a href="{% url 'web:product' %}" class="about-btn btn-primary">VIEW MORE</a>
+          <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+            <div class="timer-text-block">
+              <h2 class="title">
+                Best Waterproofing Solutions
+              </h2>
+              <div class="description">
+                <p>
+                  Safeguard your construction sites with the most quality waterproofing chemicals from Lead Chem. No
+                  more worry about water damages, we are here to protect your houses. Buy with us and enjoy the quality
+                  in every product.
+                </p>
               </div>
+
+
+              <a href="{% url 'web:about' %}" class="btn-primary para-btn">VIEW MORE</a>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 timer-image ">
+            <div class="image-wrapper">
+              <img class="img-fluid" src="{% static 'web/images/paralax-image.png' %}" alt="Demo Shop">
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- serviceblock -->
-    <section id="ishiservices" class="ishiservicesblock container">
+
+
+  <section id="ishifeatures">
+    <div class="container">
       <div class="section-header text-center">
         <div class="subtitle">THE PRODUCTS</div>
-        <h2 class="title">Best chemicals From Lead Chem</h2>
+        <h2 class="title">Awesome Features</h2>
       </div>
-      <div class="ishiservices row">
-        <div class="services col-lg-3 col-md-6 col-sm-6 col-xs-6">
-          <a href="{% url 'web:about' %}">
-            <div class="service-img-outer">
-              <div class="service-img">
-                <img src="{% static 'web/images/services/1.png' %}" alt="services1" class="img-fluid">
-              </div>
-            </div>
-            <div class="service-block">
-              <div class="service-title">Waterproofing Chemicals</div>
-              <div class="service-desc">Best waterproofing chemicals to protect from water damages.</div>
-            </div>
-          </a>
+      <div class="row">
+        <div class="banner-left col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <img class="img-fluid" src="{% static 'web/images/feature-image.png' %}" alt="Demo Shop">
         </div>
-        <div class="services col-lg-3 col-md-6 col-sm-6 col-xs-6">
-          <a href="{% url 'web:about' %}">
-            <div class="service-img-outer">
-              <div class="service-img">
-                <img src="{% static 'web/images/services/2.png' %}" alt="services2" class="img-fluid">
-              </div>
-            </div>
-            <div class="service-block">
-              <div class="service-title">Flooring Systems</div>
-              <div class="service-desc">The complete flooring solutions at the best price offerings.</div>
-            </div>
-          </a>
-        </div>
-        <div class="services col-lg-3 col-md-6 col-sm-6 col-xs-6">
-          <a href="{% url 'web:about' %}">
-            <div class="service-img-outer">
-              <div class="service-img">
-                <img src="{% static 'web/images/services/3.png' %}" alt="services3" class="img-fluid">
-              </div>
-            </div>
-            <div class="service-block">
-              <div class="service-title">Tiles Fixing Adhesives</div>
-              <div class="service-desc">Fix your tiles with the best tile fixing adhesives from Lead Chem.</div>
-            </div>
-          </a>
-        </div>
-        <div class="services col-lg-3 col-md-6 col-sm-6 col-xs-6">
-          <a href="{% url 'web:about' %}">
-            <div class="service-img-outer">
-              <div class="service-img">
-                <img src="{% static 'web/images/services/4.png' %}" alt="services4" class="img-fluid">
-              </div>
-            </div>
-            <div class="service-block">
-              <div class="service-title">Curing & Adhesives</div>
-              <div class="service-desc">Best quality curing and adhesives of the finest quality and price</div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- product block -->
-    <section id="ishiproductsblock" class="ishiproductsblock container">
-      <div class="section-header text-center">
-        <div class="subtitle">THE LATEST</div>
-        <h2 class="title">Fabulous Products</h2>
-      </div>
-      <div class="logo-bar">
-        <div class="row">
-          <div class="block_content">
-            {% for products in product %}
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 product-thumb">
-              <div class="product-container">
-                <div class="image">
-                  <a href="{% url 'web:product' %}" class="thumbnail product-thumbnail">
-                    <img src="{{products.image.crop.370x370}}" alt="product-img">
-                   
-                  </a>
-                  
-                </div>
-                <div class="caption">
-                  <div class="product-title "><a href="{% url 'web:product' %}">{{products.title}}</a></div>
-                  <p class="para-color">
-                    {{products.description}}
-                  </p>
-                 
-                </div>
-              </div>
-            </div>
-            {% endfor %}
-            
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- parallax block -->
-    <section id="ishiparallaxbanner" class="clearfix">
-      <div class="parallax" data-countdowntime="2022-11-30">
-        <div class="container">
+        <div class="features-right col-lg-6 col-md-12 col-sm-12 col-xs-12">
           <div class="row">
-            <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
-              <div class="timer-text-block">
-                <h2 class="title">
-                  Best Waterproofing Solutions
-                </h2>
-                <div class="description">
-                  <p>
-                    Safeguard your construction sites with the most quality waterproofing chemicals from Lead Chem. No more worry about water damages, we are here to protect your houses. Buy with us and enjoy the quality in every product.
-                  </p>
+            <div class="ishifeaturesblock-container item col-md-6 col-sm-6 col-xs-6">
+              <a href="{% url 'web:product' %}" target="_blank" rel="nofollow">
+                <div class="item-inner">
+                  <div class="image-inner">
+                    <img src="{% static 'web/images/High Quality.png' %}" alt="features1" class="img-fluid">
+                  </div>
+                  <div class="features-title">
+                    Highest Quality
+                  </div>
+                  <div class="features-subtitle">
+                    <p>Construction chemicals at the highest quality.</p>
+                  </div>
                 </div>
-               
-                  
-                <a href="{% url 'web:about' %}" class="btn-primary para-btn">VIEW MORE</a>
-              </div>
+              </a>
             </div>
-            <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 timer-image ">
-              <div class="image-wrapper">
-                <img class="img-fluid" src="{% static 'web/images/paralax-image.png' %}" alt="Demo Shop">
-              </div>
+            <div class="ishifeaturesblock-container item col-md-6 col-sm-6 col-xs-6">
+              <a href="{% url 'web:product' %}" target="_blank" rel="nofollow">
+                <div class="item-inner">
+                  <div class="image-inner">
+                    <img src="{% static 'web/images/Best Price.png' %}" alt="features2" class="img-fluid">
+                  </div>
+                  <div class="features-title">
+                    Best Price
+                  </div>
+                  <div class="features-subtitle">
+                    <p>Attractive prices for all construction chemicals.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="ishifeaturesblock-container item col-md-6 col-sm-6 col-xs-6">
+              <a href="{% url 'web:product' %}" target="_blank" rel="nofollow">
+                <div class="item-inner">
+                  <div class="image-inner">
+                    <img src="{% static 'web/images/Easy Application.png' %}" alt="features3" class="img-fluid">
+                  </div>
+                  <div class="features-title">
+                    Easy Application
+                  </div>
+                  <div class="features-subtitle">
+                    <p>Simple application procedures for your ease.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="ishifeaturesblock-container item col-md-6 col-sm-6 col-xs-6">
+              <a href="{% url 'web:product' %}" target="_blank" rel="nofollow">
+                <div class="item-inner">
+                  <div class="image-inner">
+                    <img src="{% static 'web/images/More Durability.png' %}" alt="features4" class="img-fluid">
+                  </div>
+                  <div class="features-title">
+                    More Durability
+                  </div>
+                  <div class="features-subtitle">
+                    <p>Long-lasting products to save your money.</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  
-    
+    </div>
+  </section>
 
-    <section id="ishifeatures">
+  <!-- ishi-features-section -->
+
+  <section id="ishitesimonial" class="ishitestimonialsblock">
+    <div class="bgimage">
       <div class="container">
         <div class="section-header text-center">
           <div class="subtitle">THE PRODUCTS</div>
-          <h2 class="title">Awesome Features</h2>
+          <h2 class="title">Customer Review</h2>
         </div>
-        <div class="row">
-          <div class="banner-left col-lg-6 col-md-12 col-sm-12 col-xs-12">
-            <img class="img-fluid" src="{% static 'web/images/feature-image.png' %}" alt="Demo Shop">
-          </div>
-          <div class="features-right col-lg-6 col-md-12 col-sm-12 col-xs-12">
-            <div class="row">
-              <div class="ishifeaturesblock-container item col-md-6 col-sm-6 col-xs-6">
-                <a href="{% url 'web:product' %}" target="_blank" rel="nofollow">
-                  <div class="item-inner">
-                    <div class="image-inner">
-                      <img src="{% static 'web/images/High Quality.png' %}" alt="features1" class="img-fluid">
-                    </div>
-                    <div class="features-title">
-                      Highest Quality
-                    </div>
-                    <div class="features-subtitle">
-                      <p>Construction chemicals at the highest quality.</p>
-                    </div>
-                  </div>
-                </a>
+        <div id="ishitestimonials-carousel" class="owl-carousel">
+          {% for testimonilas in testimonial %}
+          <div class="item ishitestimonials-container">
+            <div class="testimonial-container">
+              <div class="testimonial-img">
+                <img src="{{testimonilas.image.crop.90x90}}" class="img-fluid" alt="Marko Westin">
               </div>
-              <div class="ishifeaturesblock-container item col-md-6 col-sm-6 col-xs-6">
-                <a href="{% url 'web:product' %}" target="_blank" rel="nofollow">
-                  <div class="item-inner">
-                    <div class="image-inner">
-                      <img src="{% static 'web/images/Best Price.png' %}" alt="features2" class="img-fluid">
-                    </div>
-                    <div class="features-title">
-                      Best Price
-                    </div>
-                    <div class="features-subtitle">
-                      <p>Attractive prices for all construction chemicals.</p>
-                    </div>
-                  </div>
-                </a>
+              <div class="user-description">
+                {{testimonilas.description}}
               </div>
-              <div class="ishifeaturesblock-container item col-md-6 col-sm-6 col-xs-6">
-                <a href="{% url 'web:product' %}" target="_blank" rel="nofollow">
-                  <div class="item-inner">
-                    <div class="image-inner">
-                      <img src="{% static 'web/images/Easy Application.png' %}" alt="features3" class="img-fluid">
-                    </div>
-                    <div class="features-title">
-                      Easy Application
-                    </div>
-                    <div class="features-subtitle">
-                      <p>Simple application procedures for your ease.</p>
-                    </div>
-                  </div>
-                </a>
+              <div class="user-name">
+                {{testimonilas.name}}
               </div>
-              <div class="ishifeaturesblock-container item col-md-6 col-sm-6 col-xs-6">
-                <a href="{% url 'web:product' %}" target="_blank" rel="nofollow">
-                  <div class="item-inner">
-                    <div class="image-inner">
-                      <img src="{% static 'web/images/More Durability.png' %}" alt="features4" class="img-fluid">
-                    </div>
-                    <div class="features-title">
-                      More Durability
-                    </div>
-                    <div class="features-subtitle">
-                      <p>Long-lasting products to save your money.</p>
-                    </div>
-                  </div>
-                </a>
+              <div class="user-designation">
+                {{testimonilas.designation}}
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ishi-features-section -->
-
-    <section id="ishitesimonial" class="ishitestimonialsblock">
-      <div class="bgimage">
-        <div class="container">
-          <div class="section-header text-center">
-            <div class="subtitle">THE PRODUCTS</div>
-            <h2 class="title">Customer Review</h2>
-          </div>
-          <div id="ishitestimonials-carousel" class="owl-carousel">
-            {% for testimonilas in testimonial %}
-            <div class="item ishitestimonials-container">
-              <div class="testimonial-container">
-                <div class="testimonial-img">
-                  <img src="{{testimonilas.image.crop.90x90}}" class="img-fluid" alt="Marko Westin">
-                </div>
-                <div class="user-description">
-                  {{testimonilas.description}}
-                </div>
-                <div class="user-name">
-                  {{testimonilas.name}}
-                </div>
-                <div class="user-designation">
-                  {{testimonilas.designation}}
-                </div>
-                <!-- <div class="user-ratting">
+              <!-- <div class="user-ratting">
                   <span class="starrating">
                     <i class="star-icon starfill"></i>
                     <i class="star-icon starfill"></i>
@@ -334,11 +336,11 @@ finest quality. The major advantages with Lead chem are -
                     <i class="star-icon "></i>
                   </span>
                 </div> -->
-              </div>
             </div>
+          </div>
           {% endfor %}
 
-<!-- 
+          <!-- 
             <div class="item ishitestimonials-container">
               <div class="testimonial-container">
                 <div class="testimonial-img">
@@ -391,107 +393,73 @@ finest quality. The major advantages with Lead chem are -
                 </div>
               </div>
             </div> -->
-            
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ishiaboutusblock -->
+
+  <section class="ishiaboutusblock">
+    <div class="container">
+      <div class="row">
+        <div class="about2">
+          <div class="text-wrapper col-xl-5 col-lg-6 col-md-12 col-sm-12 col-xs-12 about-text2">
+            <div class="about-text-block section-header">
+              <div class="subtitle">THE PRODUCTS</div>
+              <h2 class="title">What is Lead Chem?</h2>
+              <div class="description">
+                <p>
+                  We are one of the leading suppliers of construction chemicals manufactured by the leading
+                  brands in the industry. We aim to provide you with the best construction chemicals at the best
+                  price and of the highest quality. With Lead Chem, you can purchase all the construction
+                  chemical brands that you love.
+                </p>
+              </div>
+              <a href="{% url 'web:about' %}" class="btn-primary about-btn">
+                VIEW MORE
+              </a>
+            </div>
+          </div>
+          <div class="about-image-wrapper col-xl-7 col-lg-6 col-md-12 col-sm-12 col-xs-12 about-img2">
+            <img class="about-img img-fluid" src="{% static 'web/images/about-image1.png' %}" alt="Demo Shop">
           </div>
         </div>
       </div>
-    </section>
-    <!-- ishiaboutusblock -->
+    </div>
+  </section>
 
-    <section class="ishiaboutusblock">
-      <div class="container">
-        <div class="row">
-          <div class="about2">
-            <div class="text-wrapper col-xl-5 col-lg-6 col-md-12 col-sm-12 col-xs-12 about-text2">
-              <div class="about-text-block section-header">
-                <div class="subtitle">THE PRODUCTS</div>
-                <h2 class="title">What is Lead Chem?</h2>
-                <div class="description">
-                  <p>
-                    We are one of the leading suppliers of construction chemicals manufactured by the leading
-brands in the industry. We aim to provide you with the best construction chemicals at the best
-price and of the highest quality. With Lead Chem, you can purchase all the construction
-chemical brands that you love.
-                  </p>
-                </div>
-                <a href="{% url 'web:about' %}" class="btn-primary about-btn">
-                  VIEW MORE
-                </a>
-              </div>
-            </div>
-            <div class="about-image-wrapper col-xl-7 col-lg-6 col-md-12 col-sm-12 col-xs-12 about-img2">
-              <img class="about-img img-fluid" src="{% static 'web/images/about-image1.png' %}" alt="Demo Shop">
+  <!-- brand-logo -->
+  <section id="ishimanufacturerblock">
+    <div class="section-header text-center hidden">
+      <div class="subtitle">OUR MANUFACTURES</div>
+      <h2 class="title">Manufactures</h2>
+    </div>
+    <div class="container">
+      <div class="manufacturer-container">
+        <div id="manufacturer-carousel" class="owl-carousel">
+
+          {% for brands in brand%}
+          <div class="item">
+            <div class="image-container">
+              <a href="{% url 'web:product' %}">
+                <img src="{{brands.image.crop.130x130}}" alt="brand-1" class="img-responsive">
+              </a>
             </div>
           </div>
+          {% endfor %}
+
+
+         
+
+
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- brand-logo -->
-    <section id="ishimanufacturerblock">
-      <div class="section-header text-center hidden">
-        <div class="subtitle">OUR MANUFACTURES</div>
-        <h2 class="title">Manufactures</h2>
-      </div>
-      <div class="container">
-        <div class="manufacturer-container">
-          <div id="manufacturer-carousel" class="owl-carousel">
+</div>
 
-            {% for brands in brand%}
-            <div class="item">
-              <div class="image-container">
-                <a href="{% url 'web:product' %}">
-                  <img src="{{brands.image.crop.130x130}}" alt="brand-1" class="img-responsive">
-                </a>
-              </div>
-            </div>
-            {% endfor %}
-
-
-            <!-- <div class="item">
-              <div class="image-container">
-                <a href="categorypage_leftcolumn.html">
-                  <img src="{% static 'web/images/brand/logo2.png' %}" alt="brand-2" class="img-responsive">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="image-container">
-                <a href="categorypage_leftcolumn.html">
-                  <img src="{% static 'web/images/brand/logo3.png' %}" alt="brand-3" class="img-responsive">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="image-container">
-                <a href="categorypage_leftcolumn.html">
-                  <img src="{% static 'web/images/brand/logo4.png' %}" alt="brand-4" class="img-responsive">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="image-container">
-                <a href="categorypage_leftcolumn.html">
-                  <img src="{% static 'web/images/brand/logo5.png' %}" alt="brand-5" class="img-responsive">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="image-container">
-                <a href="categorypage_leftcolumn.html">
-                  <img src="{% static 'web/images/brand/logo6.png' %}" alt="brand-6" class="img-responsive">
-                </a>
-              </div>
-            </div> -->
-
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </div>
-  
 
 
 

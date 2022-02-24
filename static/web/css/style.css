@@ -25,6 +25,7 @@
 .para-color{
     color: #888;
     text-align: justify;
+    padding: 0px 18px;
 }
 .whatsapp-icon{
     width: 35px;
@@ -56,6 +57,9 @@
 .icon-color{
     color: white;
 }
+.copyright-align{
+    text-align: center !important;
+}
 
 
 @media  screen and (max-width: 575px) {
@@ -79,7 +83,7 @@
     .fb-insta-twi-icon{
         padding-top: 14px;
     }
-
+    
    
 }
 

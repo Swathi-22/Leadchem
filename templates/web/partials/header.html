@@ -29,7 +29,7 @@
 
 
         <!-- desktop_logo -->
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+        <div class="col-lg-8 col-md-10 col-sm-8 col-xs-8">
           <div class="nav-full-width">
             <div class="container">
               <div class="row">
@@ -129,18 +129,18 @@
 
                   <ul class="social-inner d-flex float-right fb-insta-twi-icon" style="margin: auto;">
                     <li class="facebook">
-                      <a href="categorypage_leftcolumn.html" target="_blank">
+                      <a href="{% url 'web:product' %}" target="_blank">
                         <i class="fa fa-facebook icon-color"></i><span class="socialicon-label fb-icon-padding"></span>
                       </a>
                     </li>
                     <li class="twitter">
-                      <a href="categorypage_leftcolumn.html" target="_blank">
+                      <a href="{% url 'web:product' %}" target="_blank">
                         <i class="fa fa-twitter icon-color"></i><span class="socialicon-label fb-icon-padding"></span>
                       </a>
                     </li>
 
                     <li class="instagram">
-                      <a href="categorypage_leftcolumn.html" target="_blank">
+                      <a href="{% url 'web:product' %}" target="_blank">
                         <i class="fa fa-instagram icon-color"></i><span class="socialicon-label fb-icon-padding"></span>
                       </a>
                     </li>
@@ -156,25 +156,22 @@
 
         </div>
 
-
-
-
-        <div class="header-right col-md-2 col-sm-2 col-lg-2 col-xs-2">
+        <div class="header-right col-md-1 col-sm-2 col-lg-2 col-xs-2">
 
           <ul class="social-inner d-flex float-right " style="margin: auto;">
             <li class="facebook">
-              <a href="categorypage_leftcolumn.html" target="_blank">
+              <a href="{% url 'web:product' %}" target="_blank">
                 <i class="fa fa-facebook"></i><span class="socialicon-label fb-icon-padding"></span>
               </a>
             </li>
             <li class="twitter">
-              <a href="categorypage_leftcolumn.html" target="_blank">
+              <a href="{% url 'web:product' %}" target="_blank">
                 <i class="fa fa-twitter"></i><span class="socialicon-label fb-icon-padding"></span>
               </a>
             </li>
 
             <li class="instagram">
-              <a href="categorypage_leftcolumn.html" target="_blank">
+              <a href="{% url 'web:product' %}" target="_blank">
                 <i class="fa fa-instagram"></i><span class="socialicon-label fb-icon-padding"></span>
               </a>
             </li>
@@ -183,6 +180,7 @@
 
 
         </div>
+
       </div>
     </div>
   </div>

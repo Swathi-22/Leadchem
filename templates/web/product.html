@@ -3,28 +3,7 @@
 {% block content %}
 
 
-<!-- mobile media -->
-<!-- <div id="menu-icon" class="menu-icon hidden-lg-up">
-  <div class="menu-block">
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-      <symbol id="setup" viewBox="0 0 750 750">
-        <title>setup</title>
-        <g>
-          <rect y="46.06" width="344.339" height="29.52"></rect>
-        </g>
-        <g>
-          <rect y="156.506" width="344.339" height="29.52"></rect>
-        </g>
-        <g>
-          <rect y="268.748" width="344.339" height="29.531"></rect>
-        </g>
-      </symbol>
-    </svg>
-    <svg class="icon" viewBox="0 0 40 40">
-      <use xlink:href="#setup" x="25%" y="27%"></use>
-    </svg>
-  </div>
-</div> -->
+
 <div id="_mobile_cart"></div>
 <div id="_mobile_account"></div>
 <div id="_mobile_seach_widget"></div>
@@ -140,29 +119,7 @@
 
 
               </div>
-              <!-- <div class="pagination">
-                <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12 pagination-desc">Showing 1-15 of 19 item(s)</div>
-                <div class="col-xl-8  col-lg-7 col-md-7 col-xs-12 pagination-right">
-                  <ul class="page-list clearfix">
-                    <li>
-                      <a rel="prev" href="javascript:void(0)" class="previous">
-                        <i class="material-icons"></i><span class="pagination-lbl">Previous</span>
-                      </a>
-                    </li>
-                    <li class="current">
-                      <a rel="nofollow" href="javascript:void(0)" class="disabled js-search-link">1</a>
-                    </li>
-                    <li>
-                      <a rel="nofollow" href="javascript:void(0)" class="js-search-link">2</a>
-                    </li>
-                    <li>
-                      <a rel="next" href="javascript:void(0)" class="next js-search-link">
-                        <span class="pagination-lbl">Next</span><i class="material-icons"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div> -->
+              
             </div>
           </div>
         </section>
@@ -194,11 +151,11 @@
 
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
             <label for="" style="color: #2c709d;">Quantity</label>
-            <input type="text" class="form-control required" id="qty">
+            <input type="number" class="form-control required" name="quantity" min="1" max="5" id="qty">
           </div>
           <input type="text" hidden id="title1">
           <div class="submit-button col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <input class="btn btn-primary" name="submitMessage" value="Send" type="submit">
+            <input class="btn btn-primary" name="submitMessage" value="Request" type="submit">
             <input class="btn btn-primary" name="cancel" value="Cancel" type="reset">
           </div>
         </div>
@@ -206,7 +163,6 @@
     </div>
   </section>
 </div>
-
 {% endblock %}
 
 {% block javascript %}

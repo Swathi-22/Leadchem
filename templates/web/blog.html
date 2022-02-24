@@ -21,7 +21,7 @@
 <div id="wrapper ">
   <div class="container">
     <div class="row mt-5">
-  
+
 
 
       <div id="content-wrapper" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -35,45 +35,47 @@
                     <img alt="Upon of seasons earth dominion" src="{{updates.image.crop.370x242}}">
                   </a>
                 </div>
-                
-                  <div class="smartblog-desc col-xl-12 col-lg-12 col-md-12">
-                    
-                    
-                    <div class="sdsarticleHeader">
-                      <h3 class='sdstitle_block'><a title="Upon of seasons earth dominion" href="{% url 'web:blogDetails' updates.slug %}">
-                          {{updates.title}}</a></h3>
-                    </div>
-                   
-                    <div class="sdsarticle-des">
-                      <div class="clearfix">
-                        <div class="lipsum">
-                         {{updates.summary}}
-                        </div>
+
+                <div class="smartblog-desc col-xl-12 col-lg-12 col-md-12">
+
+
+                  <div class="sdsarticleHeader">
+                    <h3 class='sdstitle_block'><a title="Upon of seasons earth dominion"
+                        href="{% url 'web:blogDetails' updates.slug %}">
+                        {{updates.title}}</a></h3>
+                  </div>
+
+                  <div class="sdsarticle-des">
+                    <div class="clearfix">
+                      <div class="lipsum">
+                        {{updates.summary}}
                       </div>
                     </div>
-                    <div class="sdsreadMore">
-                      <span class="more">
-                        <a title="Upon of seasons earth dominion" href="{% url 'web:blogDetails' updates.slug %}" class="r_more btn-primary">Read
-                          more</a>
-                      </span>
-                    </div>
                   </div>
-                
+                  <div class="sdsreadMore">
+                    <span class="more">
+                      <a title="Upon of seasons earth dominion" href="{% url 'web:blogDetails' updates.slug %}"
+                        class="r_more btn-primary">Read
+                        more</a>
+                    </span>
+                  </div>
+                </div>
+
 
               </div>
             </div>
-            {% endfor  %}
-
-            
+            {% endfor %}
 
 
-           
+
+
+
           </div>
 
 
         </div>
 
-       
+
 
 
 

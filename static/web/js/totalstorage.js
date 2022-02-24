@@ -1,14 +1,3 @@
-/**
- * TotalStorage
- *
- * Copyright (c) 2012 Jared Novack & Upstatement (upstatement.com)
- * Dual licensed under the MIT and GPL licenses:
- * http://www.opensource.org/licenses/mit-license.php
- * http://www.gnu.org/licenses/gpl.html
- *
- * Total Storage is the conceptual the love child of jStorage by Andris Reinman, 
- * and Cookie by Klaus Hartl -- though this is not connected to either project.
- */
 
 (function($) {
     'use strict';

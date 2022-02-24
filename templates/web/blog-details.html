@@ -1,106 +1,108 @@
 {% extends 'web/base.html' %}
 {% load static %}
 {% block content %}
-                
-      <!-- Breadcrumb -->
-      <div class="breadcrumb-container">
-        <nav data-depth="2" class="breadcrumb container">
-          <h1 class="h1 category-title breadcrumb-title">Blog</h1>
-          <ul>
-            <li>
-              <a href="{% url 'web:index' %}">
-                <span>Home</span>
-              </a>
-            </li>
-            <li>
-                <span>Blog Post</span>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- Smart Blog -->
-      <section id="wrapper">
-        <div class="container">
-          <div class="row mt-5">          
-            <div id="content-wrapper" class="left-column col-xs-12 col-sm-12 col-md-12 col-lg-9"> 
-              <div id="content" class="block">
-                <div id="sdsblogArticle" class="blog-post">
-                    <div class="articleBody">
-                        <div id="lipsum" class="articleContent">
-                          <div class="single-blogpost-img">
-                            <a id="post_images" href="javascript:void(0)">
-                                <img src="{{update.image.crop.870x568}}" alt="Nostro expetenda">
-                            </a>
-                          </div>
-                            <div class="page-item-title">
-                                <h2>{{update.title}} </h2>
-                            </div>
-                            <ul class="post-info">
-                              <li> 
-                               <time datetime="2018-09-10">{{update.date}}</time>
-                              </li>
-                              
-                           </ul>
-                            <div class="sdsarticle-des">
-                              <p>
-                                {{update.summary}}
-                            
-                              <div class="small-desc">
-                                <p>
-                                  {{update.content| safe}}
-                                </p>
-                              </div>
-                            </div>
-                        </div> 
-                       
-                    </div>
+
+<!-- Breadcrumb -->
+<div class="breadcrumb-container">
+  <nav data-depth="2" class="breadcrumb container">
+    <h1 class="h1 category-title breadcrumb-title">Blog</h1>
+    <ul>
+      <li>
+        <a href="{% url 'web:index' %}">
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <span>Blog Post</span>
+      </li>
+    </ul>
+  </nav>
+</div>
+<!-- Smart Blog -->
+<section id="wrapper">
+  <div class="container">
+    <div class="row mt-5">
+      <div id="content-wrapper" class="left-column col-xs-12 col-sm-12 col-md-12 col-lg-9">
+        <div id="content" class="block">
+          <div id="sdsblogArticle" class="blog-post">
+            <div class="articleBody">
+              <div id="lipsum" class="articleContent">
+                <div class="single-blogpost-img">
+                  <a id="post_images" href="javascript:void(0)">
+                    <img src="{{update.image.crop.870x568}}" alt="Nostro expetenda">
+                  </a>
+                </div>
+                <div class="page-item-title">
+                  <h2>{{update.title}} </h2>
+                </div>
+                <ul class="post-info">
+                  <li>
+                    <time datetime="2018-09-10">{{update.date}}</time>
+                  </li>
+
+                </ul>
+                <div class="sdsarticle-des">
+                  <p>
+                    {{update.summary}}
+
+                  <div class="small-desc">
+                    <p>
+                      {{update.content| safe}}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div> 
-            <div id="_desktop_right_column" class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
-              <div id="right-column">
-                <section class="blog-category">
-                  <h3 class="h1 products-section-title block-title hidden-md-down">Top viewed</h3>
-                  <div class="block-title clearfix  hidden-lg-up collapsed" data-target="#blogarticle-container" data-toggle="collapse">
-                    <span class="products-section-title">Top viewed</span>
-                    <span class="navbar-toggler collapse-icons">
-                      <i class="material-icons add">&#xE313;</i>
-                      <i class="material-icons remove">&#xE316;</i>
-                    </span>
-                  </div>
-                  <div id="blogarticle-container" class="collapse data-toggler">
-                    {% for updates in updates_deatails %}
-                    <div class="description clearfix">
-                      <div class="blog-artical">
-                        <a href="{% url 'web:blogDetails' updates.slug %}">
-                          <img alt="Upon of seasons earth dominion" src="{{updates.image.crop.80x52}}">
-                        </a>
-                      </div>
-                      <div class="blog-desc">
-                        <p class='sdstitle_block'><a title="Upon of seasons earth dominion" href="{% url 'web:blogDetails' updates.slug %}">{{updates.title}}</a></p>
-                        <div class="smart-desc">
-                          
-                          <div class="meta-date">
-                            <span>{{updates.date}}</span>
-                          </div>                          
-                        </div>
-                      </div>
-                    </div>
-                    {% endfor %}
 
-                
-                </section>
-               
-                
-              </div>
-            </div>        
+            </div>
           </div>
-        </div>        
-      </section>
-      <div class="container">
-        <div id="_mobile_left_column"></div>
-        <div id="_mobile_right_column"></div>
-        <div class="clearfix"></div>
+        </div>
       </div>
-      
-      {% endblock %}
+      <div id="_desktop_right_column" class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+        <div id="right-column">
+          <section class="blog-category">
+            <h3 class="h1 products-section-title block-title hidden-md-down">Top viewed</h3>
+            <div class="block-title clearfix  hidden-lg-up collapsed" data-target="#blogarticle-container"
+              data-toggle="collapse">
+              <span class="products-section-title">Top viewed</span>
+              <span class="navbar-toggler collapse-icons">
+                <i class="material-icons add">&#xE313;</i>
+                <i class="material-icons remove">&#xE316;</i>
+              </span>
+            </div>
+            <div id="blogarticle-container" class="collapse data-toggler">
+              {% for updates in updates_deatails %}
+              <div class="description clearfix">
+                <div class="blog-artical">
+                  <a href="{% url 'web:blogDetails' updates.slug %}">
+                    <img alt="Upon of seasons earth dominion" src="{{updates.image.crop.80x52}}">
+                  </a>
+                </div>
+                <div class="blog-desc">
+                  <p class='sdstitle_block'><a title="Upon of seasons earth dominion"
+                      href="{% url 'web:blogDetails' updates.slug %}">{{updates.title}}</a></p>
+                  <div class="smart-desc">
+
+                    <div class="meta-date">
+                      <span>{{updates.date}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+
+
+          </section>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div id="_mobile_left_column"></div>
+  <div id="_mobile_right_column"></div>
+  <div class="clearfix"></div>
+</div>
+
+{% endblock %}
