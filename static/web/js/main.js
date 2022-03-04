@@ -1,11 +1,13 @@
 $(document).ready(function () {
+    
+
     $('#whatsapp-form').hide()
 });
 
 
 $('#whatsapp-form').submit(function () {
 
-    var phone = '919539438918';
+    var phone = '917594939666';
     var Compname = $('#name').val()
     var quanity = $('#qty').val()
     var proTitle = $('#title1').val()
@@ -21,5 +23,4 @@ $('#whatsapp-form').submit(function () {
 
     return false
 })
-
 
