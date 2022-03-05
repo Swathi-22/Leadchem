@@ -12051,6 +12051,7 @@ div.required .control-label:before {
 #ishispecialproducts {
   /*========================== NO CHANGE ==========================*/ }
   @media (max-width: 575px) {
+    
     .product-thumb .btn-cart {
       display: inline-block;
       vertical-align: middle;
